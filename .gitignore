@@ -1,0 +1,10 @@
+data/raw/
+data/interim/
+data/probe/
+data/*.duckdb
+data/*.duckdb.wal
+__pycache__/
+.DS_Store
+.venv/
+.claude/
+data/out/*.log
