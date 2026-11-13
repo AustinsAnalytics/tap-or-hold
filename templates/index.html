@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tap or Hold · Pricing the ABS challenge</title>
+<meta name="description" content="A win-probability model of every 2026 ABS challenge decision, a season-replay price for the challenge itself, and a dugout card built for the Colorado Rockies. By Austin Gentile.">
+<meta property="og:title" content="Tap or Hold · Pricing the ABS challenge">
+<meta property="og:description" content="Umpires missed {{missed}} calls in 2026. Clubs won back {{share_fixed}} of the value. A priced policy wins back {{card_share}}.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://austinsanalytics.github.io/tap-or-hold/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script type="module" src="assets/app.js"></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#"><span class="dot"></span>Tap or Hold</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#summary">Summary</a>
+      <a href="#price">The price</a>
+      <a href="#card">Dugout card</a>
+      <a href="#calc">Calculator</a>
+      <a href="#replay">Replay</a>
+      <a href="#players">Players</a>
+      <a href="#tapped">Tapped out</a>
+      <a href="#coors">Coors</a>
+      <a href="#rockies">Rockies</a>
+      <a href="#opponents">Opponents</a>
+      <a href="#method">Method</a>
+    </nav>
+    <button class="theme" id="theme" type="button" aria-label="Switch light or dark theme">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+<div class="hero wrap">
+  <div class="kicker">ABS challenge strategy · 2026 regular season · built for the Colorado Rockies</div>
+  <h1>Tap <em>or</em> Hold</h1>
+  <p class="dek">Every ABS challenge is a bet. Tap, and you might flip a call that swings the game. Lose, and you've spent the one thing that could save you later. I priced both sides of that bet for all {{called}} called pitches of 2026 and turned the answer into a dugout card.</p>
+  <div class="byline">By <strong>Austin Gentile</strong> · Updated {{updated}} · Data: Baseball Savant (Statcast) and the MLB Stats API, 2026 regular season ({{games}} games, {{pitches}} pitches)</div>
+  <div class="kpis">
+    <div class="kpi"><div class="v num">{{missed}}</div><div class="l">calls the umpire missed in 2026, judged by the ABS zone ({{miss_rate}} of called pitches)</div></div>
+    <div class="kpi"><div class="v num">{{wins_missed_per_club}}</div><div class="l">wins those misses took from each club</div></div>
+    <div class="kpi"><div class="v num">{{wins_fixed_per_club}}</div><div class="l">wins clubs won back with challenges ({{share_fixed}} of it)</div></div>
+    <div class="kpi"><div class="v num">+{{card_gain}}</div><div class="l">more wins per club per season from pricing every tap (cross-validated season replay)</div></div>
+  </div>
+</div>
+
+<section class="block" id="summary">
+  <div class="wrap">
+    <div class="kicker">The short version</div>
+    <h2>Six findings, four recommendations</h2>
+    <div class="grid-2">
+      <ol class="findings">
+        <li><b>I rebuilt the robot umpire from public data.</b> It reproduces {{zone_matched}} of {{zone_challenges}} real 2026 challenges ({{zone_agree}}), so every missed call below is measured, not guessed.</li>
+        <li><b>A challenge has a price, and it moves.</b> Baseball Savant's public guideline charges a flat 0.20 runs for losing one. Replaying the season, a club's last challenge is worth about {{price_k1_inn1_runs}} runs in the 1st inning, {{price_k1_inn7_runs}} by the 7th and {{price_k1_inn9_runs}} in the 9th. A spare (one of two) is worth about {{k2_share_of_k1}} as much.</li>
+        <li><b>Players don't price the moment.</b> On clear misses, players tapped {{stakes_tap_low}} of the cheapest calls and {{stakes_tap_high}} of calls worth {{stakes_ratio}}× more. Priced correctly, those numbers should be {{stakes_card_low}} and {{stakes_card_high}}.</li>
+        <li><b>Tap more, win less, gain more.</b> The card taps {{card_taps}} times a game (clubs: {{actual_taps}}) and wins only {{card_winrate}} of them (clubs: {{actual_winrate}}), yet recovers {{card_wins}} wins a season to the clubs' {{actual_wins}}.</li>
+        <li><b>Nobody adjusts when a lineup is tapped out.</b> By the 9th, {{tapped_9th}} of pitches go to a lineup with no challenges left. Umpires don't call it differently and pitchers don't attack the umpire's extra strikes any more often.</li>
+        <li><b>Altitude raises the stakes, not the errors.</b> At Coors the same call is worth {{coors_v_lift}} more and four-seamers lose {{ivb_drop}} in. of ride, but umpires miss at the same rate and visitors challenge just as accurately.</li>
+      </ol>
+      <div class="card">
+        <div class="kicker">What I'd tell the Rockies' staff</div>
+        <ul class="recs">
+          <li><b>Price every tap.</b> Hold early unless you're sure; from the 7th on in a close game, a coin-flip call is worth a tap; never finish a close game with a challenge unused. The <a href="#card">card</a> gives the exact bar for every count, inning and score.</li>
+          <li><b>Give the defensive trigger to the catcher.</b> Catchers won {{catcher_rate}} of {{catcher_taps}} taps in 2026; pitchers won {{pitcher_rate}} of {{pitcher_taps}}. Hunter Goodman won {{goodman_ot}} of {{goodman_taps}} ({{goodman_rate}}).</li>
+          <li><b>Hitters: be stingy early, bold with two strikes.</b> Rockies hitters won {{col_off_rate}} of their taps (league {{lg_off_rate}}). The value is concentrated: the top 10% of missed calls carry {{top10_share}} of all the value.</li>
+          <li><b>Watch the other dugout's count.</b> When a lineup is out of challenges, the umpire's zone is final. Pitch to it (see the <a href="#tapped">map</a>).</li>
+        </ul>
+        <p class="small muted" style="margin-top:14px">Rockies 2026: {{col_wins_missed}} wins of missed calls went against them; they won back {{col_wins_fixed}}. The card would have won back {{col_card}}.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="price">
+  <div class="wrap">
+    <div class="kicker">The price of a tap</div>
+    <h2>When is a challenge worth spending?</h2>
+    <div class="prose">
+      <p class="lede">A call goes against you. You believe, with probability <i>p</i>, that ABS would overturn it. Tapping wins <i>V</i> (the win probability the flipped call is worth) with probability <i>p</i>, and costs <i>D</i> (what the challenge is worth for the rest of the game) with probability 1 − <i>p</i>, because a successful challenge is kept. So tap when</p>
+    </div>
+    <div class="formula">tap if &nbsp;<span class="hl"><i>p</i></span>&nbsp; ≥ &nbsp;<span class="frac"><span><i>D</i></span><span><i>V</i> + <i>D</i></span></span></div>
+    <div class="prose">
+      <p><i>V</i> is easy: a win-probability model that matches Savant's published values (correlation {{we_corr}}) prices every call in every state. <i>D</i> is the hard part, and it is what Savant fixes at 0.20 runs. Like an option, a challenge has time value: it is worth what you can do with it later, so it decays as the game runs out, and the last one is worth more than a spare. I estimated <i>D</i> by replaying all {{games}} games: each club's real remaining calls, with their real values and real umpire misses, played forward with and without one more challenge, using simulated eyesight fitted to how 2026 players actually challenged (details in <a href="#method">Method</a>).</p>
+    </div>
+    <div class="grid-2" style="margin-top:20px">
+      <div class="card">
+        <div class="chart-title">The price of losing a challenge, in runs</div>
+        <div class="chart-sub">Tie game, average of home and away. The dashed line is the flat 0.20-run guideline.</div>
+        <div class="chart" id="ch-price"></div>
+      </div>
+      <div class="card">
+        <div class="chart-title">The last challenge, in win probability, by score</div>
+        <div class="chart-sub">Close games keep their challenges valuable late; blowouts don't.</div>
+        <div class="chart" id="ch-price-wp"></div>
+      </div>
+    </div>
+    <div class="prose" style="margin-top:22px">
+      <p>The last challenge is worth {{price_k1_inn1_wp}} of a win in the 1st inning of a tie game, {{price_k1_inn7_wp}} in the 7th and {{price_k1_inn9_wp}} in the 9th. In runs, that is {{price_k1_inn1_runs}} → {{price_k1_inn7_runs}} → {{price_k1_inn9_runs}}: below the flat guideline everywhere, and far below it late. That one gap drives most of what follows: the flat rule makes players too stingy, most of all when it matters most.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="card">
+  <div class="wrap">
+    <div class="kicker">The dugout card</div>
+    <h2>How sure do you need to be?</h2>
+    <p class="prose">Each cell is the confidence a player needs that the call was wrong before tapping. Lower means tap more freely. Pick the spot; the card recomputes in your browser from the same model. Hover a cell for the numbers behind it.</p>
+    <div class="controls">
+      <div class="ctl"><span class="lab">Park</span><div class="seg" id="c-env"></div></div>
+      <div class="ctl"><span class="lab">Challenges</span><div class="seg" id="c-k"></div></div>
+      <div class="ctl"><span class="lab">Your club</span><div class="seg" id="c-home"></div></div>
+      <div class="ctl"><span class="lab">On</span><div class="seg" id="c-side"></div></div>
+      <div class="ctl"><span class="lab">Score (your lead)</span><div class="seg" id="c-margin"></div></div>
+      <div class="ctl"><span class="lab">Outs</span><div class="seg" id="c-outs"></div></div>
+      <div class="ctl"><span class="lab">Runners</span><div class="seg" id="c-bases"></div></div>
+      <div class="ctl"><span class="lab">Compare</span><div class="seg" id="c-show"></div></div>
+    </div>
+    <div class="card cardwrap">
+      <div class="small muted" style="text-align:center;margin-bottom:6px">Inning →&nbsp;&nbsp; Count ↓</div>
+      <table class="heat" id="card-table" aria-label="Break-even confidence by count and inning"></table>
+      <div class="legend">
+        <span><span class="sw" style="background:var(--accent)"></span>Tap freely (low bar)</span>
+        <span><span class="sw" style="background:var(--surface-2);border:1px solid var(--rule)"></span>Hold unless sure</span>
+        <span>· "—" never worth it · "·" half-inning not played</span>
+      </div>
+      <p class="small muted" id="card-caption" style="margin:10px 0 0"></p>
+      <p class="small muted" id="card-inch" style="margin:4px 0 0"></p>
+    </div>
+    <div class="grid-2" style="margin-top:22px">
+      <div class="prose">
+        <h3>Three spots from the card</h3>
+        <p><b>0-0, 2nd inning, tie game, two challenges left, bases empty.</b> The call is worth {{ex1_v}} of a win. Tap only if you are at least {{ex1_p}} sure. (Flat rule: {{ex1_flat}}.)</p>
+        <p><b>3-2, bottom of the 9th, tie, runner on first, last challenge, defense.</b> Worth {{ex2_v}}. The bar is {{ex2_p}}: if there is any real doubt, tap. (Flat rule: {{ex2_flat}}.)</p>
+        <p><b>1-2, top of the 8th, down one, runner on second, two out, last challenge, offense.</b> Worth {{ex3_v}}. Tap at {{ex3_p}}. (Flat rule: {{ex3_flat}}.)</p>
+      </div>
+      <div class="card">
+        <div class="kicker">Printable</div>
+        <p style="margin:0 0 10px">A two-page laminate: Coors Field and the road, close games, two challenges and one, bases empty and runners on.</p>
+        <p style="margin:0"><a href="assets/dugout-card.pdf" download>Download the dugout card (PDF) →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="calc">
+  <div class="wrap">
+    <div class="kicker">Should I tap?</div>
+    <h2>Any situation, one answer</h2>
+    <p class="prose">Set the game state and how sure you are. The verdict compares your confidence with the break-even bar for that exact spot.</p>
+    <div class="calc">
+      <div class="card">
+        <div class="inputs">
+          <div class="ctl"><span class="lab">Park</span><div class="seg" id="k-env"></div></div>
+          <div class="ctl"><span class="lab">Your club</span><div class="seg" id="k-home"></div></div>
+          <div class="ctl" style="grid-column:1/-1"><span class="lab">Call against you</span><div class="seg" id="k-side"></div></div>
+          <div class="ctl"><label for="k-inning">Inning</label><select id="k-inning"></select></div>
+          <div class="ctl"><label for="k-margin">Your lead</label><select id="k-margin"></select></div>
+          <div class="ctl"><span class="lab">Outs</span><div class="seg" id="k-outs"></div></div>
+          <div class="ctl"><span class="lab">Runners</span>
+            <div class="diamond" id="k-bases"><button type="button" data-bit="1" aria-pressed="false">1B</button><button type="button" data-bit="2" aria-pressed="false">2B</button><button type="button" data-bit="4" aria-pressed="false">3B</button></div></div>
+          <div class="ctl"><span class="lab">Balls (before the pitch)</span><div class="seg" id="k-balls"></div></div>
+          <div class="ctl"><span class="lab">Strikes</span><div class="seg" id="k-strikes"></div></div>
+          <div class="ctl"><span class="lab">Challenges left</span><div class="seg" id="k-k"></div></div>
+          <div class="ctl" style="grid-column:1/-1"><label for="k-conf">How sure are you the call was wrong? <span id="k-conf-lab" class="num"></span></label>
+            <input type="range" id="k-conf" min="1" max="99" step="1"></div>
+        </div>
+      </div>
+      <div id="verdict" class="verdict" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="replay">
+  <div class="wrap">
+    <div class="kicker">What a better policy is worth</div>
+    <h2>Replaying 2026 with the card</h2>
+    <div class="grid-2">
+      <div class="prose">
+        <p>Every policy below faces the same {{sim_calls}} calls with the same simulated eyesight ({{sim_draws}} draws per call). The card's price table was always estimated on one half of the games and scored on the other half, so no policy is graded on games it learned from.</p>
+        <p>The card recovers <b>{{card_wins}} wins per club per season</b>, against {{actual_wins}} for what clubs actually did and {{flat_wins}} for the flat 0.20-run rule. It gets there by tapping more ({{card_taps}} taps a game against {{actual_taps}}) and losing more ({{card_winrate}} success against {{actual_winrate}}): most of the time a lost challenge is cheap, and one left unused at the final out is worth nothing.</p>
+        <p class="small muted">Range across clubs for the card: {{card_min}}–{{card_max}} wins. With a more pessimistic eyesight model the card still recovers {{card_wins_probit}} wins (+{{card_gain_probit}} over actual; flat rule {{flat_wins_probit}}). Fixing every missed call would be worth {{ceiling_wins}}.</p>
+      </div>
+      <div class="card">
+        <div class="chart-title">Wins recovered per club per season</div>
+        <div class="chart-sub">Cross-validated season replay; "actual" is what 2026 clubs really won back.</div>
+        <div class="chart" id="ch-policy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="players">
+  <div class="wrap">
+    <div class="kicker">Players and the zone</div>
+    <h2>Eyes, will and stakes</h2>
+    <div class="grid-2">
+      <div class="card">
+        <div class="chart-title">Clear misses challenged, by what the call was worth</div>
+        <div class="chart-sub">{{clear_misses}} calls missed by 1–4 in. with a challenge in hand, grouped into tenths by value.</div>
+        <div class="chart" id="ch-stakes"></div>
+      </div>
+      <div class="prose">
+        <p>The most valuable tenth of clear misses was worth {{stakes_ratio}} times the cheapest tenth. Players barely noticed: they tapped {{stakes_tap_low}} of the cheap ones and {{stakes_tap_high}} of the expensive ones. Priced correctly, the gap is {{stakes_card_low}} to {{stakes_card_high}}.</p>
+        <p>To simulate realistic decisions I fitted a model of every 2026 challenge opportunity in which a player sees how wrong the call was with some error (his eyesight) and, if what he sees clears his bar, taps with some probability (his willingness). Catchers and pitchers read the zone to within about <b>{{def_sigma}} in.</b> (95% CI {{def_sigma_lo}}–{{def_sigma_hi}}); hitters to within about <b>{{off_sigma}} in.</b> ({{off_sigma_lo}}–{{off_sigma_hi}}). Even when the call looks clearly wrong, hitters tap only {{off_rho}} of the time and batteries {{def_rho}}. A tenfold jump in the stakes moves a hitter's bar by just {{off_tau10x}} in.</p>
+        <p>Who should tap? On defense, catchers won {{catcher_rate}} of {{catcher_taps}} challenges and pitchers {{pitcher_rate}} of {{pitcher_taps}}; hitters won {{hitter_rate}} of {{hitter_taps}}.</p>
+      </div>
+    </div>
+    <div class="card" style="margin-top:22px">
+      <div class="chart-title">How often players tap, by how wrong the call really was</div>
+      <div class="chart-sub">Circles: 2026 rate in half-inch bins. Lines: the fitted eyesight-and-willingness model. Right of zero, ABS would have overturned the call.</div>
+      <div class="chart" id="ch-curve"></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="tapped">
+  <div class="wrap">
+    <div class="kicker">Tapped out</div>
+    <h2>When the robot zone disappears</h2>
+    <div class="grid-2">
+      <div class="prose">
+        <p>Once a lineup has no challenges left, the umpire's call is final, and the umpire's zone is not the ABS zone. By the 7th inning {{tapped_7th}} of pitches go to a tapped-out lineup; by the 8th {{tapped_8th}}; by the 9th {{tapped_9th}}.</p>
+        <p>Nobody adjusts. Umpires call strikes outside the ABS zone at the same rate relative to location ({{ump_out_ratio}} of expected when the lineup is out, {{ump_has_ratio}} when it isn't). And pitchers don't throw to the umpire's extra strike area any more often: it takes {{gift_share}} of pitches either way (change with the lineup out: {{gift_coef}} points, standard error {{gift_se}}, with pitcher, count and inning controls).</p>
+        <p>That is a free edge. When the opponent is tapped out, a borderline pitch in the orange areas of the map is a called strike that can no longer be taken back.</p>
+      </div>
+      <div class="card">
+        <div class="chart-title">The human zone vs the robot zone</div>
+        <div class="chart-sub">Umpire strike rate minus ABS strike rate. Orange: umpires give extra strikes. Teal: umpires take strikes away. Box: the rulebook rectangle.</div>
+        <div class="controls"><div class="seg" id="ump-stand"></div></div>
+        <div class="chart" id="ch-ump"></div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:22px">
+      <div class="chart-title">Share of pitches thrown to a lineup with no challenges left</div>
+      <div class="chart" id="ch-tapped"></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="coors">
+  <div class="wrap">
+    <div class="kicker">Coors Field</div>
+    <h2>Altitude raises the stakes, not the errors</h2>
+    <div class="grid-2">
+      <div class="prose">
+        <p>At 5,200 feet the ball moves less: 2026 four-seamers at Coors averaged {{ivb_coors}} in. of induced vertical break against {{ivb_else}} elsewhere, and {{hb_coors}} in. of horizontal break against {{hb_else}}. Half-innings at Coors produced {{coors_runs_half}} runs against {{else_runs_half}} ({{coors_runs_lift}} more).</p>
+        <p>So the win-probability model has a Coors version: the same run distributions tilted by one parameter fitted to every Coors half-inning. It forecasts Coors games better than the league version (Brier {{brier_coors_coors}} vs {{brier_coors_league}}). In the same situation a flipped call at Coors is worth {{coors_v_lift}} more, and the card's bar at Coors sits {{coors_pstar_drop}} points lower in close games.</p>
+        <p>What altitude does <i>not</i> change: umpires missed {{coors_miss_strikes}} of called strikes at Coors and {{else_miss_strikes}} elsewhere ({{coors_miss_balls}} and {{else_miss_balls}} of called balls), and visiting players won {{vis_coors_rate}} of {{vis_coors_n}} challenges at Coors (95% CI {{vis_coors_lo}}–{{vis_coors_hi}}) against {{else_rate}} everywhere else. A saved challenge is worth about the same at Coors too (multiplier {{kappa1}}, 95% CI {{kappa1_lo}}–{{kappa1_hi}}), so the card keeps one price table and lets each call's stakes do the work.</p>
+      </div>
+      <div class="card">
+        <div class="chart-title">What a flipped call is worth, by count</div>
+        <div class="chart-sub">Average win probability per 2026 called pitch. Gray: league run environment. Purple: Coors.</div>
+        <div class="chart" id="ch-coors"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="rockies">
+  <div class="wrap">
+    <div class="kicker">The Rockies' 2026</div>
+    <h2>An elite battery, hitters who leave value behind</h2>
+    <div class="grid-2">
+      <div class="prose">
+        <p>Missed calls cost the Rockies {{col_wins_missed}} wins in 2026; they won back {{col_wins_fixed}} ({{col_fix_rank}} in MLB). On defense they ranked {{col_def_rank}} in challenge success: {{col_def_ot}} of {{col_def_taps}} won ({{col_def_rate}}, league {{lg_def_rate}}), led by Hunter Goodman at {{goodman_ot}} of {{goodman_taps}}. At the plate they ranked {{col_off_rank}}: {{col_off_ot}} of {{col_off_taps}} ({{col_off_rate}}, league {{lg_off_rate}}).</p>
+        <p>The costliest one was the one they couldn't challenge. On {{ga_date}} at {{ga_opp}}, tied in the bottom of the 9th, a full-count pitch to {{ga_batter}} {{ga_w}} in. inside the ABS zone was called ball four. The Rockies were already out of challenges. That call was worth {{ga_v}} of a win.</p>
+        <p>The hitters' misses had a second cost: failed taps run the lineup dry. The Rockies were out of challenges for {{col_out_late}} of the pitches they saw from the 7th inning on, {{col_out_late_rank}} most in MLB (league average {{lg_out_late}}), so late in games their hitters faced the umpire's zone more than anyone's.</p>
+        <p>Replaying their season with the card: {{col_card}} wins won back instead of {{col_wins_fixed}}.</p>
+      </div>
+      <div class="card">
+        <div class="chart-title">Rockies who tapped</div>
+        <div class="tablewrap"><table class="data" id="t-col-challengers"></table></div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:22px">
+      <div class="chart-title">The ones that got away</div>
+      <div class="chart-sub">The most valuable missed calls against the Rockies that were never challenged.</div>
+      <div class="tablewrap"><table class="data" id="t-col-gotaway"></table></div>
+    </div>
+    <div class="card" style="margin-top:22px">
+      <div class="chart-title">Rockies hitters: clear misses left on the table</div>
+      <div class="chart-sub">Strikes called on pitches 1+ in. off the ABS zone with a challenge in hand.</div>
+      <div class="tablewrap"><table class="data" id="t-col-hitters"></table></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="opponents">
+  <div class="wrap">
+    <div class="kicker">Advance cards</div>
+    <h2>How every opponent challenges</h2>
+    <p class="prose">Volume, success and who pulls the trigger, plus how often each club is out of challenges from the 7th inning on, when its lineup is facing the umpire's zone.</p>
+    <div class="controls"><div class="seg" id="team-filter"></div></div>
+    <div class="teams" id="teams"></div>
+  </div>
+</section>
+
+<section class="block" id="method">
+  <div class="wrap">
+    <div class="kicker">How it works</div>
+    <h2>Method and checks</h2>
+    <ol class="steps prose" style="max-width:none">
+      <li><b>Data.</b> Every 2026 regular-season pitch from Baseball Savant ({{pitches}}) joined to the MLB Stats API's pitch-by-pitch review records, which flag each ABS challenge, who made it and whether it was overturned ({{challenges}} challenges, all matched). Loaded into DuckDB; cleaning and joins are written in SQL.</li>
+      <li><b>The ABS zone.</b> A strike if any part of the ball touches the batter's rectangle: 17 in. wide, from 27% to 53.5% of his certified height. Savant's published zone tops and bottoms match those percentages exactly. I tested where to measure the pitch and how big the ball is against the {{zone_challenges}} known verdicts: the published plate coordinates with a {{ball_radius}}-in. radius reproduce {{zone_agree}}; moving the pitch to mid-plate, as the rule's wording suggests, reproduces at best {{zone_mid_best}}, and ignoring the ball's size {{zone_no_radius}}.</li>
+      <li><b>Win probability.</b> For any state, the rest of the half-inning comes from the empirical distribution of runs scored from that base-out-count state, and each later half-inning from that inning's run distribution; convolving them gives the final margin. It matches Savant's published win expectancy (correlation {{we_corr}}, mean gap {{we_mad}}) and predicts final results as well (Brier {{brier_ours}} vs {{brier_savant}}). The Coors version tilts every distribution by one fitted parameter (θ = {{coors_theta}}). Run expectancy by count matches Savant's (correlation {{re_count_corr}}).</li>
+      <li><b>Eyesight and willingness.</b> P(tap) = willingness × Φ((miss − bar) / eyesight), fitted by maximum likelihood to every challenge opportunity, separately for hitters and batteries; the bar may move with the stakes, the inning and the challenges left. It beats a plain probit on AIC by {{off_aic_gain}} (hitters) and {{def_aic_gain}} (batteries). Calibrated beliefs come from Bayes' rule with the 2026 distribution of misses as the prior.</li>
+      <li><b>The price of a challenge.</b> A season replay: for every club-game and every point in it, the club's real remaining calls are played forward with 0, 1 and 2 challenges under the card's own thresholds, {{sim_draws}} eyesight draws per call, including the extra-inning rule. The difference is <i>D</i>. Three rounds of policy iteration; challenge values are averaged by inning, home/away, score and challenges left.</li>
+      <li><b>Scoring policies.</b> Two-fold cross-validation by game; every policy sees the same calls and the same eyesight draws. Sensitivity: a more pessimistic eyesight model (plain probit: {{off_probit_sigma}} in. hitters, {{def_probit_sigma}} in. batteries).</li>
+    </ol>
+    <div class="grid-2" style="margin-top:24px">
+      <div class="card">
+        <div class="chart-title">Rebuilding ABS: challenges reproduced</div>
+        <div class="chart-sub">By ball radius and where the pitch is measured, against all {{zone_challenges}} known verdicts.</div>
+        <div class="chart" id="ch-zone"></div>
+      </div>
+      <div class="card">
+        <div class="chart-title">Win-probability calibration</div>
+        <div class="chart-sub">Every 2026 pitch, each game weighted equally, in tenths of predicted probability.</div>
+        <div class="chart" id="ch-calib"></div>
+      </div>
+    </div>
+    <h3>Automated data checks ({{checks_n}}, all passing)</h3>
+    <div class="checks" id="checks"></div>
+    <h3>Limits</h3>
+    <div class="prose">
+      <p>The replay holds the rest of each real game fixed after a simulated flip; a flipped call would have changed what came next, so the values are first-order. Simulated players use calibrated beliefs; real ones are not always calibrated. Leaving a challenge unused costs nothing in the model, but taps have real costs the data can't see: time, an umpire's patience, a hitter's focus. The Coors sample is one season of 81 games. Public tracking may differ slightly from what ABS measures, though {{zone_mismatches}} of {{zone_challenges}} verdicts disagree.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b style="color:var(--ink)">Austin Gentile</b> · Mathematics and Data Science, Centre College · <a href="https://www.linkedin.com/in/austin-gentile-0560a3342">LinkedIn</a> · <a href="https://github.com/AustinsAnalytics/tap-or-hold">Code and data pipeline</a></p>
+    <p>Built with Claude Code (Anthropic) as an AI pair programmer. Every number on this page comes from the open pipeline in the repository, which rebuilds it from the raw data with one command and checks it with automated tests.</p>
+    <p>Independent analysis. Not affiliated with, endorsed by or produced for Major League Baseball or the Colorado Rockies. Data: Baseball Savant and the MLB Stats API.</p>
+    <p id="load-error" hidden style="color:var(--warn)">The interactive parts could not load. The text above is complete; the charts need JavaScript.</p>
+  </div>
+</footer>
+</body>
+</html>
