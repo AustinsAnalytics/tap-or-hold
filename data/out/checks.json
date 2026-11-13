@@ -1,0 +1,80 @@
+[
+ {
+  "check": "Statcast regular-season rows",
+  "value": 716792,
+  "pass": true,
+  "note": ""
+ },
+ {
+  "check": "Duplicate pitch rows removed",
+  "value": 0,
+  "pass": true,
+  "note": ""
+ },
+ {
+  "check": "Games in Statcast",
+  "value": 2429,
+  "pass": true,
+  "note": "2,429 games were completed in 2026"
+ },
+ {
+  "check": "Pitches matched to MLB Stats API pitch events",
+  "value": 0.99678,
+  "pass": true,
+  "note": ""
+ },
+ {
+  "check": "ABS challenges in the API",
+  "value": 7896,
+  "pass": true,
+  "note": ""
+ },
+ {
+  "check": "ABS challenges matched to a Statcast pitch",
+  "value": 7896,
+  "pass": true,
+  "note": ""
+ },
+ {
+  "check": "Challenges on pitches that are not called balls/strikes",
+  "value": 5,
+  "pass": true,
+  "note": ""
+ },
+ {
+  "check": "Teams mapped from Statcast abbreviations",
+  "value": 30,
+  "pass": true,
+  "note": ""
+ },
+ {
+  "check": "Called pitches missing tracking or zone data",
+  "value": 0.00054,
+  "pass": true,
+  "note": ""
+ },
+ {
+  "check": "Zone bottom / top ratio (rule: 27 / 53.5 = 0.5047)",
+  "value": 0.50467,
+  "pass": true,
+  "note": "sd 0.000018"
+ },
+ {
+  "check": "Batters whose ABS zone stays within 0.1 in. all season",
+  "value": 0.9985,
+  "pass": true,
+  "note": "some heights switch between inch and cm precision mid-season (~0.01 in.)"
+ },
+ {
+  "check": "Challenges made with none left (data or rule anomalies)",
+  "value": 0,
+  "pass": true,
+  "note": "could be technical-failure retentions"
+ },
+ {
+  "check": "Half-innings played to three outs",
+  "value": 0.9953,
+  "pass": true,
+  "note": ""
+ }
+]

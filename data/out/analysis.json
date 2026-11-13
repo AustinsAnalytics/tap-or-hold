@@ -1,0 +1,4215 @@
+{
+ "league": {
+  "called": 371623.0,
+  "missed": 23016.0,
+  "challenges": 7891.0,
+  "overturns": 4429.0,
+  "wp_missed": 288.18755044432663,
+  "wp_fixed": 62.437695086680584,
+  "games": 2429.0,
+  "missed_per_game": 9.47550432276657,
+  "challenges_per_game": 3.248662000823384,
+  "wp_missed_per_team_season": 9.606251681477554,
+  "wp_fixed_per_team_season": 2.0812565028893526,
+  "share_fixed": 0.2166564620519323,
+  "top10pct_share_of_missed_value": 0.36792256325538725,
+  "median_missed_call_wp": 0.008532896887434638,
+  "by_side": [
+   {
+    "wronged_side": "offense",
+    "missed": 12607.0,
+    "challenges": 3466.0,
+    "overturns": 2003.0,
+    "wp_missed": 155.32530781389886,
+    "wp_fixed": 31.71392322111134
+   },
+   {
+    "wronged_side": "defense",
+    "missed": 10409.0,
+    "challenges": 4425.0,
+    "overturns": 2426.0,
+    "wp_missed": 132.8622426304281,
+    "wp_fixed": 30.723771865569248
+   }
+  ],
+  "by_count": [
+   {
+    "count": "0-0",
+    "called": 124021,
+    "miss_rate": 0.07595487860926778,
+    "mean_v_wp": 0.008092036283417366,
+    "mean_v_runs": 0.08929235123667281,
+    "challenges": 2414.0,
+    "overturn_rate": 0.5985915492957746
+   },
+   {
+    "count": "0-1",
+    "called": 46384,
+    "miss_rate": 0.05756295274232494,
+    "mean_v_wp": 0.008403641790756887,
+    "mean_v_runs": 0.09423054218443029,
+    "challenges": 1065.0,
+    "overturn_rate": 0.6075117370892019
+   },
+   {
+    "count": "0-2",
+    "called": 23577,
+    "miss_rate": 0.022352292488442126,
+    "mean_v_wp": 0.017328886079806344,
+    "mean_v_runs": 0.18626867279113693,
+    "challenges": 231.0,
+    "overturn_rate": 0.43722943722943725
+   },
+   {
+    "count": "1-0",
+    "called": 40034,
+    "miss_rate": 0.0762102213118849,
+    "mean_v_wp": 0.01292649673317196,
+    "mean_v_runs": 0.1442068070490497,
+    "challenges": 953.0,
+    "overturn_rate": 0.6044071353620147
+   },
+   {
+    "count": "1-1",
+    "called": 32081,
+    "miss_rate": 0.06695551884292883,
+    "mean_v_wp": 0.0116575767207364,
+    "mean_v_runs": 0.1288989459395938,
+    "challenges": 1041.0,
+    "overturn_rate": 0.5456292026897214
+   },
+   {
+    "count": "1-2",
+    "called": 29276,
+    "miss_rate": 0.026916245388714306,
+    "mean_v_wp": 0.02180744088356501,
+    "mean_v_runs": 0.23583569855638134,
+    "challenges": 380.0,
+    "overturn_rate": 0.4342105263157895
+   },
+   {
+    "count": "2-0",
+    "called": 14331,
+    "miss_rate": 0.08108296699462703,
+    "mean_v_wp": 0.018544564672215283,
+    "mean_v_runs": 0.2137292257978609,
+    "challenges": 420.0,
+    "overturn_rate": 0.5833333333333334
+   },
+   {
+    "count": "2-1",
+    "called": 15675,
+    "miss_rate": 0.07355661881977671,
+    "mean_v_wp": 0.01717018067574859,
+    "mean_v_runs": 0.18981793885034884,
+    "challenges": 676.0,
+    "overturn_rate": 0.514792899408284
+   },
+   {
+    "count": "2-2",
+    "called": 20899,
+    "miss_rate": 0.03411646490262692,
+    "mean_v_wp": 0.030169461166551947,
+    "mean_v_runs": 0.3264168875315624,
+    "challenges": 427.0,
+    "overturn_rate": 0.4449648711943794
+   },
+   {
+    "count": "3-0",
+    "called": 7075,
+    "miss_rate": 0.07434628975265017,
+    "mean_v_wp": 0.01592785005527951,
+    "mean_v_runs": 0.18563086229374434,
+    "challenges": 67.0,
+    "overturn_rate": 0.6417910447761194
+   },
+   {
+    "count": "3-1",
+    "called": 7624,
+    "miss_rate": 0.07148478488982161,
+    "mean_v_wp": 0.02462058605322456,
+    "mean_v_runs": 0.2766660904461756,
+    "challenges": 217.0,
+    "overturn_rate": 0.4700460829493088
+   },
+   {
+    "count": "3-2",
+    "called": 10646,
+    "miss_rate": 0.0294007138831486,
+    "mean_v_wp": 0.05450925459740303,
+    "mean_v_runs": 0.5970770657866733,
+    "challenges": 0.0,
+    "overturn_rate": NaN
+   }
+  ],
+  "tapped_out_by_inning": [
+   {
+    "inning": 1,
+    "bat_out": 0.001155930162552679,
+    "fld_out": 1.2040939193257074e-05
+   },
+   {
+    "inning": 2,
+    "bat_out": 0.0016536794367467615,
+    "fld_out": 0.0017789581819548496
+   },
+   {
+    "inning": 3,
+    "bat_out": 0.005104136840663786,
+    "fld_out": 0.0059755748378502865
+   },
+   {
+    "inning": 4,
+    "bat_out": 0.01306315962021007,
+    "fld_out": 0.013201861121969057
+   },
+   {
+    "inning": 5,
+    "bat_out": 0.0238059458511784,
+    "fld_out": 0.023830991559596264
+   },
+   {
+    "inning": 6,
+    "bat_out": 0.03707653390208819,
+    "fld_out": 0.035613312831704776
+   },
+   {
+    "inning": 7,
+    "bat_out": 0.057239429695181906,
+    "fld_out": 0.05464601769911504
+   },
+   {
+    "inning": 8,
+    "bat_out": 0.08226061564667235,
+    "fld_out": 0.08015573670762867
+   },
+   {
+    "inning": 9,
+    "bat_out": 0.11130451757739422,
+    "fld_out": 0.11237819459582567
+   },
+   {
+    "inning": 10,
+    "bat_out": 0.0341051671039124,
+    "fld_out": 0.04231778259381772
+   }
+  ]
+ },
+ "stakes": {
+  "deciles": [
+   {
+    "decile": 0,
+    "v_median": 0.000396484752538985,
+    "tap_rate": 0.23536439665471923,
+    "n": 837
+   },
+   {
+    "decile": 1,
+    "v_median": 0.0023160021992413614,
+    "tap_rate": 0.25567502986857826,
+    "n": 837
+   },
+   {
+    "decile": 2,
+    "v_median": 0.004004437776128689,
+    "tap_rate": 0.2640382317801673,
+    "n": 837
+   },
+   {
+    "decile": 3,
+    "v_median": 0.005839817228910693,
+    "tap_rate": 0.23923444976076555,
+    "n": 836
+   },
+   {
+    "decile": 4,
+    "v_median": 0.007515065854977604,
+    "tap_rate": 0.2939068100358423,
+    "n": 837
+   },
+   {
+    "decile": 5,
+    "v_median": 0.009519321088189647,
+    "tap_rate": 0.26642771804062126,
+    "n": 837
+   },
+   {
+    "decile": 6,
+    "v_median": 0.011773144050303275,
+    "tap_rate": 0.2679425837320574,
+    "n": 836
+   },
+   {
+    "decile": 7,
+    "v_median": 0.015410173349809098,
+    "tap_rate": 0.3022700119474313,
+    "n": 837
+   },
+   {
+    "decile": 8,
+    "v_median": 0.021370345851582817,
+    "tap_rate": 0.3058542413381123,
+    "n": 837
+   },
+   {
+    "decile": 9,
+    "v_median": 0.037222417806919594,
+    "tap_rate": 0.35842293906810035,
+    "n": 837
+   }
+  ],
+  "stakes_ratio_top_vs_bottom": 93.88108261050881,
+  "tap_rate_bottom": 0.23536439665471923,
+  "tap_rate_top": 0.35842293906810035
+ },
+ "rockies": {
+  "vs_league": [
+   {
+    "rockies": true,
+    "wronged_side": "offense",
+    "challenges": 135.0,
+    "overturns": 66.0,
+    "missed": 365.0,
+    "missed_with_challenge_left": 342.0,
+    "wp_missed": 4.529631379271635,
+    "wp_fixed": 1.0791246884635852,
+    "games": 162,
+    "per_team": 1
+   },
+   {
+    "rockies": true,
+    "wronged_side": "defense",
+    "challenges": 151.0,
+    "overturns": 92.0,
+    "missed": 331.0,
+    "missed_with_challenge_left": 314.0,
+    "wp_missed": 4.184718500943589,
+    "wp_fixed": 1.0988110778067002,
+    "games": 162,
+    "per_team": 1
+   },
+   {
+    "rockies": false,
+    "wronged_side": "offense",
+    "challenges": 3331.0,
+    "overturns": 1937.0,
+    "missed": 12242.0,
+    "missed_with_challenge_left": 11688.0,
+    "wp_missed": 150.79567643462727,
+    "wp_fixed": 30.634798532647743,
+    "games": 2429,
+    "per_team": 29
+   },
+   {
+    "rockies": false,
+    "wronged_side": "defense",
+    "challenges": 4274.0,
+    "overturns": 2334.0,
+    "missed": 10078.0,
+    "missed_with_challenge_left": 9665.0,
+    "wp_missed": 128.6775241294845,
+    "wp_fixed": 29.62496078776255,
+    "games": 2429,
+    "per_team": 29
+   }
+  ],
+  "challengers": [
+   {
+    "player_id": 696100.0,
+    "name": "Hunter Goodman",
+    "role": "catcher",
+    "challenges": 81,
+    "overturns": 53.0,
+    "wp_gained": 0.5718860547342788,
+    "mean_margin": -0.49604790628950046
+   },
+   {
+    "player_id": 664954.0,
+    "name": "Brett Sullivan",
+    "role": "catcher",
+    "challenges": 55,
+    "overturns": 29.0,
+    "wp_gained": 0.3243272532085998,
+    "mean_margin": -0.2844602292812956
+   },
+   {
+    "player_id": 694249.0,
+    "name": "Cole Carrigg",
+    "role": "hitter",
+    "challenges": 24,
+    "overturns": 12.0,
+    "wp_gained": 0.24766670731195756,
+    "mean_margin": -0.23063181350579334
+   },
+   {
+    "player_id": 666397.0,
+    "name": "Edouard Julien",
+    "role": "hitter",
+    "challenges": 15,
+    "overturns": 9.0,
+    "wp_gained": 0.12432285977386445,
+    "mean_margin": 0.27253208707077853
+   },
+   {
+    "player_id": 681198.0,
+    "name": "TJ Rumfield",
+    "role": "hitter",
+    "challenges": 15,
+    "overturns": 7.0,
+    "wp_gained": 0.10174677205543353,
+    "mean_margin": -0.12702699020067734
+   },
+   {
+    "player_id": 650489.0,
+    "name": "Willi Castro",
+    "role": "hitter",
+    "challenges": 14,
+    "overturns": 5.0,
+    "wp_gained": 0.04228108134980797,
+    "mean_margin": -0.5556846106786124
+   },
+   {
+    "player_id": 691720.0,
+    "name": "Kyle Karros",
+    "role": "hitter",
+    "challenges": 11,
+    "overturns": 8.0,
+    "wp_gained": 0.12711679619940774,
+    "mean_margin": 1.3623911539614704
+   },
+   {
+    "player_id": 690924.0,
+    "name": "Braxton Fulford",
+    "role": "catcher",
+    "challenges": 10,
+    "overturns": 7.0,
+    "wp_gained": 0.1832298019809292,
+    "mean_margin": -0.5605874367916381
+   },
+   {
+    "player_id": 696100.0,
+    "name": "Hunter Goodman",
+    "role": "hitter",
+    "challenges": 9,
+    "overturns": 4.0,
+    "wp_gained": 0.0868358849464015,
+    "mean_margin": 0.03562952562405503
+   },
+   {
+    "player_id": 687597.0,
+    "name": "Jordan Beck",
+    "role": "hitter",
+    "challenges": 6,
+    "overturns": 2.0,
+    "wp_gained": 0.017744258731340612,
+    "mean_margin": -0.6848891822819777
+   },
+   {
+    "player_id": 691182.0,
+    "name": "Adael Amador",
+    "role": "hitter",
+    "challenges": 6,
+    "overturns": 2.0,
+    "wp_gained": 0.03975306335056447,
+    "mean_margin": -0.3858524424616734
+   },
+   {
+    "player_id": 681393.0,
+    "name": "Connor Norby",
+    "role": "hitter",
+    "challenges": 5,
+    "overturns": 1.0,
+    "wp_gained": 0.005336649027092022,
+    "mean_margin": -0.37375063822436627
+   },
+   {
+    "player_id": 694514.0,
+    "name": "Sterlin Thompson",
+    "role": "hitter",
+    "challenges": 5,
+    "overturns": 1.0,
+    "wp_gained": 0.0003408666975612436,
+    "mean_margin": -1.2488583453358737
+   },
+   {
+    "player_id": 671289.0,
+    "name": "Tyler Freeman",
+    "role": "hitter",
+    "challenges": 5,
+    "overturns": 4.0,
+    "wp_gained": 0.11174327926713161,
+    "mean_margin": 0.890765808398758
+   },
+   {
+    "player_id": 678662.0,
+    "name": "Ezequiel Tovar",
+    "role": "hitter",
+    "challenges": 4,
+    "overturns": 2.0,
+    "wp_gained": 0.05820747998307907,
+    "mean_margin": -0.15842001767806946
+   },
+   {
+    "player_id": 687859.0,
+    "name": "Troy Johnston",
+    "role": "hitter",
+    "challenges": 4,
+    "overturns": 0.0,
+    "wp_gained": 0.0,
+    "mean_margin": -0.70145456672151
+   },
+   {
+    "player_id": 666160.0,
+    "name": "Mickey Moniak",
+    "role": "hitter",
+    "challenges": 4,
+    "overturns": 2.0,
+    "wp_gained": 0.011340950437601527,
+    "mean_margin": -0.19299812000051875
+   },
+   {
+    "player_id": 664983.0,
+    "name": "Jake McCarthy",
+    "role": "hitter",
+    "challenges": 3,
+    "overturns": 3.0,
+    "wp_gained": 0.03784722769600951,
+    "mean_margin": 1.2586406839941253
+   },
+   {
+    "player_id": 547179.0,
+    "name": "Michael Lorenzen",
+    "role": "pitcher",
+    "challenges": 2,
+    "overturns": 1.0,
+    "wp_gained": 0.00821686184845305,
+    "mean_margin": 0.8247787843909598
+   },
+   {
+    "player_id": 607536.0,
+    "name": "Kyle Freeland",
+    "role": "pitcher",
+    "challenges": 2,
+    "overturns": 2.0,
+    "wp_gained": 0.011151106034439362,
+    "mean_margin": -1.0176656165428402
+   },
+   {
+    "player_id": 664954.0,
+    "name": "Brett Sullivan",
+    "role": "hitter",
+    "challenges": 2,
+    "overturns": 1.0,
+    "wp_gained": 0.014099572796834242,
+    "mean_margin": 0.0686102953304022
+   },
+   {
+    "player_id": 677060.0,
+    "name": "Chad Stevens",
+    "role": "hitter",
+    "challenges": 1,
+    "overturns": 1.0,
+    "wp_gained": 0.0373381899069638,
+    "mean_margin": 1.657955177325732
+   },
+   {
+    "player_id": 500779.0,
+    "name": "Jose Quintana",
+    "role": "pitcher",
+    "challenges": 1,
+    "overturns": 0.0,
+    "wp_gained": 0.0,
+    "mean_margin": 2.472308273215316
+   },
+   {
+    "player_id": 690924.0,
+    "name": "Braxton Fulford",
+    "role": "hitter",
+    "challenges": 1,
+    "overturns": 1.0,
+    "wp_gained": 0.014200230759146545,
+    "mean_margin": 0.3017641959609987
+   },
+   {
+    "player_id": 691728.0,
+    "name": "Zac Veen",
+    "role": "hitter",
+    "challenges": 1,
+    "overturns": 1.0,
+    "wp_gained": 0.001202818173387854,
+    "mean_margin": 0.9463203441560031
+   }
+  ],
+  "hitters_clear_misses": [
+   {
+    "player_id": 691720,
+    "name": "Kyle Karros",
+    "clear_misses": 22,
+    "tapped": 6.0,
+    "wp_at_stake": 0.23990704465914678
+   },
+   {
+    "player_id": 696100,
+    "name": "Hunter Goodman",
+    "clear_misses": 15,
+    "tapped": 3.0,
+    "wp_at_stake": 0.2111360118697717
+   },
+   {
+    "player_id": 690924,
+    "name": "Braxton Fulford",
+    "clear_misses": 6,
+    "tapped": 0.0,
+    "wp_at_stake": 0.18012082830101728
+   },
+   {
+    "player_id": 694249,
+    "name": "Cole Carrigg",
+    "clear_misses": 10,
+    "tapped": 4.0,
+    "wp_at_stake": 0.1632370847970524
+   },
+   {
+    "player_id": 671289,
+    "name": "Tyler Freeman",
+    "clear_misses": 11,
+    "tapped": 3.0,
+    "wp_at_stake": 0.14899017218578298
+   },
+   {
+    "player_id": 681198,
+    "name": "TJ Rumfield",
+    "clear_misses": 9,
+    "tapped": 4.0,
+    "wp_at_stake": 0.09633005668065853
+   },
+   {
+    "player_id": 666397,
+    "name": "Edouard Julien",
+    "clear_misses": 6,
+    "tapped": 4.0,
+    "wp_at_stake": 0.08172323811738985
+   },
+   {
+    "player_id": 678662,
+    "name": "Ezequiel Tovar",
+    "clear_misses": 9,
+    "tapped": 0.0,
+    "wp_at_stake": 0.07526001835352361
+   },
+   {
+    "player_id": 650489,
+    "name": "Willi Castro",
+    "clear_misses": 12,
+    "tapped": 2.0,
+    "wp_at_stake": 0.06790605894929619
+   },
+   {
+    "player_id": 664983,
+    "name": "Jake McCarthy",
+    "clear_misses": 8,
+    "tapped": 1.0,
+    "wp_at_stake": 0.06739913102630923
+   },
+   {
+    "player_id": 687859,
+    "name": "Troy Johnston",
+    "clear_misses": 7,
+    "tapped": 0.0,
+    "wp_at_stake": 0.05965239327110468
+   },
+   {
+    "player_id": 687597,
+    "name": "Jordan Beck",
+    "clear_misses": 7,
+    "tapped": 1.0,
+    "wp_at_stake": 0.057594790976661286
+   },
+   {
+    "player_id": 664954,
+    "name": "Brett Sullivan",
+    "clear_misses": 5,
+    "tapped": 1.0,
+    "wp_at_stake": 0.03670388329599236
+   }
+  ],
+  "got_away": [
+   {
+    "game_date": "2026-04-10",
+    "inning": 9,
+    "is_top": false,
+    "balls": 3,
+    "strikes": 2,
+    "outs": 0,
+    "base_state": 1,
+    "home_score": 2,
+    "away_score": 2,
+    "home_team": "SD",
+    "away_team": "COL",
+    "orig_call": "B",
+    "w_in": 2.534227615602048,
+    "v": 0.17812806413738747,
+    "wronged_ch_left": 0,
+    "batter": "Manny Machado",
+    "pitcher": "Juan Mejia",
+    "catcher": "Brett Sullivan",
+    "wronged_side": "defense"
+   },
+   {
+    "game_date": "2026-07-04",
+    "inning": 1,
+    "is_top": true,
+    "balls": 3,
+    "strikes": 2,
+    "outs": 1,
+    "base_state": 6,
+    "home_score": 0,
+    "away_score": 0,
+    "home_team": "COL",
+    "away_team": "SF",
+    "orig_call": "B",
+    "w_in": 0.0414701823714243,
+    "v": 0.10051188805225253,
+    "wronged_ch_left": 1,
+    "batter": "Rafael Devers",
+    "pitcher": "Sean Sullivan",
+    "catcher": "Hunter Goodman",
+    "wronged_side": "defense"
+   },
+   {
+    "game_date": "2026-05-07",
+    "inning": 7,
+    "is_top": true,
+    "balls": 3,
+    "strikes": 2,
+    "outs": 1,
+    "base_state": 0,
+    "home_score": 2,
+    "away_score": 2,
+    "home_team": "COL",
+    "away_team": "NYM",
+    "orig_call": "B",
+    "w_in": 1.4340612724708535,
+    "v": 0.07820890702317795,
+    "wronged_ch_left": 1,
+    "batter": "Francisco Alvarez",
+    "pitcher": "Juan Mejia",
+    "catcher": "Brett Sullivan",
+    "wronged_side": "defense"
+   },
+   {
+    "game_date": "2026-03-31",
+    "inning": 2,
+    "is_top": true,
+    "balls": 3,
+    "strikes": 2,
+    "outs": 2,
+    "base_state": 3,
+    "home_score": 0,
+    "away_score": 0,
+    "home_team": "TOR",
+    "away_team": "COL",
+    "orig_call": "S",
+    "w_in": 0.39826709342439526,
+    "v": 0.07775586151635805,
+    "wronged_ch_left": 2,
+    "batter": "Kyle Karros",
+    "pitcher": "Max Scherzer",
+    "catcher": "Tyler Heineman",
+    "wronged_side": "offense"
+   },
+   {
+    "game_date": "2026-04-20",
+    "inning": 5,
+    "is_top": false,
+    "balls": 2,
+    "strikes": 1,
+    "outs": 1,
+    "base_state": 5,
+    "home_score": 1,
+    "away_score": 5,
+    "home_team": "COL",
+    "away_team": "LAD",
+    "orig_call": "S",
+    "w_in": 0.10963690819369076,
+    "v": 0.07059927107159733,
+    "wronged_ch_left": 2,
+    "batter": "Brenton Doyle",
+    "pitcher": "Justin Wrobleski",
+    "catcher": "Will Smith",
+    "wronged_side": "offense"
+   },
+   {
+    "game_date": "2026-08-25",
+    "inning": 5,
+    "is_top": false,
+    "balls": 1,
+    "strikes": 2,
+    "outs": 1,
+    "base_state": 4,
+    "home_score": 1,
+    "away_score": 3,
+    "home_team": "WSH",
+    "away_team": "COL",
+    "orig_call": "B",
+    "w_in": 2.846731844147466,
+    "v": 0.06105411090781482,
+    "wronged_ch_left": 0,
+    "batter": "Andr\u00e9s Chaparro",
+    "pitcher": "Mark Manfredi",
+    "catcher": "Hunter Goodman",
+    "wronged_side": "defense"
+   },
+   {
+    "game_date": "2026-08-29",
+    "inning": 9,
+    "is_top": true,
+    "balls": 3,
+    "strikes": 0,
+    "outs": 0,
+    "base_state": 0,
+    "home_score": 2,
+    "away_score": 1,
+    "home_team": "ATL",
+    "away_team": "COL",
+    "orig_call": "S",
+    "w_in": 0.5766211605449423,
+    "v": 0.06085098306155046,
+    "wronged_ch_left": 1,
+    "batter": "Willi Castro",
+    "pitcher": "Didier Fuentes",
+    "catcher": "Drake Baldwin",
+    "wronged_side": "offense"
+   },
+   {
+    "game_date": "2026-05-30",
+    "inning": 1,
+    "is_top": false,
+    "balls": 3,
+    "strikes": 1,
+    "outs": 2,
+    "base_state": 7,
+    "home_score": 2,
+    "away_score": 0,
+    "home_team": "COL",
+    "away_team": "SF",
+    "orig_call": "S",
+    "w_in": 0.6520983820432817,
+    "v": 0.05941467783894705,
+    "wronged_ch_left": 2,
+    "batter": "Edouard Julien",
+    "pitcher": "Adrian Houser",
+    "catcher": "Eric Haase",
+    "wronged_side": "offense"
+   },
+   {
+    "game_date": "2026-06-12",
+    "inning": 5,
+    "is_top": true,
+    "balls": 3,
+    "strikes": 2,
+    "outs": 1,
+    "base_state": 0,
+    "home_score": 0,
+    "away_score": 0,
+    "home_team": "ATH",
+    "away_team": "COL",
+    "orig_call": "S",
+    "w_in": 1.2546218937944167,
+    "v": 0.05502728075940633,
+    "wronged_ch_left": 1,
+    "batter": "Braxton Fulford",
+    "pitcher": "Gage Jump",
+    "catcher": "Shea Langeliers",
+    "wronged_side": "offense"
+   },
+   {
+    "game_date": "2026-04-14",
+    "inning": 8,
+    "is_top": true,
+    "balls": 1,
+    "strikes": 0,
+    "outs": 1,
+    "base_state": 3,
+    "home_score": 7,
+    "away_score": 6,
+    "home_team": "HOU",
+    "away_team": "COL",
+    "orig_call": "S",
+    "w_in": 0.8182760396756061,
+    "v": 0.05456765761776228,
+    "wronged_ch_left": 2,
+    "batter": "Tyler Freeman",
+    "pitcher": "Bryan King",
+    "catcher": "Christian V\u00e1zquez",
+    "wronged_side": "offense"
+   },
+   {
+    "game_date": "2026-05-20",
+    "inning": 3,
+    "is_top": true,
+    "balls": 3,
+    "strikes": 2,
+    "outs": 2,
+    "base_state": 2,
+    "home_score": 1,
+    "away_score": 0,
+    "home_team": "COL",
+    "away_team": "TEX",
+    "orig_call": "B",
+    "w_in": 1.1002029363738413,
+    "v": 0.05422983739872389,
+    "wronged_ch_left": 2,
+    "batter": "Andrew McCutchen",
+    "pitcher": "Kyle Freeland",
+    "catcher": "Brett Sullivan",
+    "wronged_side": "defense"
+   },
+   {
+    "game_date": "2026-09-08",
+    "inning": 8,
+    "is_top": true,
+    "balls": 2,
+    "strikes": 2,
+    "outs": 1,
+    "base_state": 0,
+    "home_score": 2,
+    "away_score": 1,
+    "home_team": "NYY",
+    "away_team": "COL",
+    "orig_call": "S",
+    "w_in": 1.5927265625386366,
+    "v": 0.053782312839813384,
+    "wronged_ch_left": 0,
+    "batter": "Connor Norby",
+    "pitcher": "Brent Headrick",
+    "catcher": "Austin Wells",
+    "wronged_side": "offense"
+   }
+  ],
+  "biggest_taps": [
+   {
+    "game_date": "2026-07-21",
+    "inning": 7,
+    "is_top": true,
+    "balls": 1,
+    "strikes": 2,
+    "outs": 1,
+    "base_state": 5,
+    "home_score": 7,
+    "away_score": 6,
+    "home_team": "COL",
+    "away_team": "WSH",
+    "orig_call": "B",
+    "w_in": -1.3360762318468267,
+    "v": 0.0769339831231457,
+    "challenger": "Hunter Goodman",
+    "overturned": false
+   },
+   {
+    "game_date": "2026-05-22",
+    "inning": 9,
+    "is_top": false,
+    "balls": 2,
+    "strikes": 1,
+    "outs": 0,
+    "base_state": 0,
+    "home_score": 2,
+    "away_score": 3,
+    "home_team": "AZ",
+    "away_team": "COL",
+    "orig_call": "B",
+    "w_in": 0.506190877700728,
+    "v": 0.07601434639997118,
+    "challenger": "Hunter Goodman",
+    "overturned": true
+   },
+   {
+    "game_date": "2026-05-01",
+    "inning": 9,
+    "is_top": false,
+    "balls": 1,
+    "strikes": 0,
+    "outs": 1,
+    "base_state": 1,
+    "home_score": 6,
+    "away_score": 8,
+    "home_team": "COL",
+    "away_team": "ATL",
+    "orig_call": "S",
+    "w_in": -1.524514928652288,
+    "v": 0.0709963083675508,
+    "challenger": "Edouard Julien",
+    "overturned": false
+   },
+   {
+    "game_date": "2026-05-20",
+    "inning": 5,
+    "is_top": false,
+    "balls": 1,
+    "strikes": 2,
+    "outs": 1,
+    "base_state": 4,
+    "home_score": 2,
+    "away_score": 3,
+    "home_team": "COL",
+    "away_team": "TEX",
+    "orig_call": "S",
+    "w_in": 0.938591785445736,
+    "v": 0.0700559911104996,
+    "challenger": "Tyler Freeman",
+    "overturned": true
+   },
+   {
+    "game_date": "2026-04-16",
+    "inning": 7,
+    "is_top": true,
+    "balls": 1,
+    "strikes": 2,
+    "outs": 1,
+    "base_state": 7,
+    "home_score": 2,
+    "away_score": 3,
+    "home_team": "HOU",
+    "away_team": "COL",
+    "orig_call": "S",
+    "w_in": 2.908714191458654,
+    "v": 0.06976665343002669,
+    "challenger": "Hunter Goodman",
+    "overturned": true
+   },
+   {
+    "game_date": "2026-06-07",
+    "inning": 6,
+    "is_top": true,
+    "balls": 1,
+    "strikes": 2,
+    "outs": 0,
+    "base_state": 7,
+    "home_score": 3,
+    "away_score": 4,
+    "home_team": "COL",
+    "away_team": "MIL",
+    "orig_call": "B",
+    "w_in": -0.3211722887650994,
+    "v": 0.06170615845897856,
+    "challenger": "Hunter Goodman",
+    "overturned": false
+   },
+   {
+    "game_date": "2026-04-14",
+    "inning": 8,
+    "is_top": true,
+    "balls": 3,
+    "strikes": 1,
+    "outs": 2,
+    "base_state": 3,
+    "home_score": 7,
+    "away_score": 6,
+    "home_team": "HOU",
+    "away_team": "COL",
+    "orig_call": "S",
+    "w_in": -1.2920698612300463,
+    "v": 0.05751776429743338,
+    "challenger": "Mickey Moniak",
+    "overturned": false
+   },
+   {
+    "game_date": "2026-05-01",
+    "inning": 9,
+    "is_top": true,
+    "balls": 2,
+    "strikes": 0,
+    "outs": 0,
+    "base_state": 0,
+    "home_score": 6,
+    "away_score": 6,
+    "home_team": "COL",
+    "away_team": "ATL",
+    "orig_call": "B",
+    "w_in": 1.568954735074599,
+    "v": 0.0553801929304053,
+    "challenger": "Hunter Goodman",
+    "overturned": true
+   }
+  ]
+ },
+ "coors": {
+  "miss_rates": [
+   {
+    "coors": false,
+    "wronged_side": "defense",
+    "called": 248074,
+    "missed": 10074.0,
+    "k": 10074,
+    "n": 248074,
+    "rate": 0.04060885058490612,
+    "lo": 0.03983920152239375,
+    "hi": 0.04139272741583352
+   },
+   {
+    "coors": false,
+    "wronged_side": "offense",
+    "called": 112014,
+    "missed": 12239.0,
+    "k": 12239,
+    "n": 112014,
+    "rate": 0.1092631278233078,
+    "lo": 0.10744954001464321,
+    "hi": 0.11110351591211906
+   },
+   {
+    "coors": true,
+    "wronged_side": "defense",
+    "called": 8274,
+    "missed": 335.0,
+    "k": 335,
+    "n": 8274,
+    "rate": 0.04048827652888567,
+    "lo": 0.03645010458801699,
+    "hi": 0.04495295101043756
+   },
+   {
+    "coors": true,
+    "wronged_side": "offense",
+    "called": 3261,
+    "missed": 368.0,
+    "k": 368,
+    "n": 3261,
+    "rate": 0.11284881938055812,
+    "lo": 0.10244124462631854,
+    "hi": 0.12416748273123535
+   }
+  ],
+  "challenge_success": [
+   {
+    "grp": "Rockies on the road",
+    "challenges": 134,
+    "overturns": 72.0,
+    "mean_dist": 1.2057309812163526,
+    "k": 72,
+    "n": 134,
+    "rate": 0.5373134328358209,
+    "lo": 0.45302872192013116,
+    "hi": 0.6195183175802808
+   },
+   {
+    "grp": "everyone else, elsewhere",
+    "challenges": 7488,
+    "overturns": 4204.0,
+    "mean_dist": 1.2349426359809703,
+    "k": 4204,
+    "n": 7488,
+    "rate": 0.5614316239316239,
+    "lo": 0.5501636359694182,
+    "hi": 0.5726366111687486
+   },
+   {
+    "grp": "visitors at Coors",
+    "challenges": 117,
+    "overturns": 67.0,
+    "mean_dist": 1.2635738215792935,
+    "k": 67,
+    "n": 117,
+    "rate": 0.5726495726495726,
+    "lo": 0.4821065754924565,
+    "hi": 0.6585734552254419
+   },
+   {
+    "grp": "Rockies at Coors",
+    "challenges": 152,
+    "overturns": 86.0,
+    "mean_dist": 1.2314028705515128,
+    "k": 86,
+    "n": 152,
+    "rate": 0.5657894736842105,
+    "lo": 0.4863306877491429,
+    "hi": 0.6420047502853741
+   }
+  ],
+  "value_by_count": [
+   {
+    "count": "0-0",
+    "v_league": 0.00805553962373034,
+    "v_coors": 0.009208456831713705
+   },
+   {
+    "count": "0-1",
+    "v_league": 0.00836202815782258,
+    "v_coors": 0.009715896869442627
+   },
+   {
+    "count": "0-2",
+    "v_league": 0.017262828656110223,
+    "v_coors": 0.019537859456043537
+   },
+   {
+    "count": "1-0",
+    "v_league": 0.012874298149179952,
+    "v_coors": 0.014649858195308797
+   },
+   {
+    "count": "1-1",
+    "v_league": 0.011605326221028058,
+    "v_coors": 0.013367584943073933
+   },
+   {
+    "count": "1-2",
+    "v_league": 0.021717020013538032,
+    "v_coors": 0.024811022412443935
+   },
+   {
+    "count": "2-0",
+    "v_league": 0.018477970572161884,
+    "v_coors": 0.020729606732223436
+   },
+   {
+    "count": "2-1",
+    "v_league": 0.017104569936126853,
+    "v_coors": 0.019173358710667745
+   },
+   {
+    "count": "2-2",
+    "v_league": 0.030053417643164167,
+    "v_coors": 0.034281584823003544
+   },
+   {
+    "count": "3-0",
+    "v_league": 0.01585851549818248,
+    "v_coors": 0.017672646435591646
+   },
+   {
+    "count": "3-1",
+    "v_league": 0.024540675723768838,
+    "v_coors": 0.027369702362185284
+   },
+   {
+    "count": "3-2",
+    "v_league": 0.05434250837393741,
+    "v_coors": 0.06132183714149607
+   }
+  ],
+  "fourseam_movement": [
+   {
+    "coors": true,
+    "ivb_in": 12.14940566414042,
+    "hb_in": 6.169525329078598,
+    "n": 7521
+   },
+   {
+    "coors": false,
+    "ivb_in": 15.731579086622492,
+    "hb_in": 7.972440681489558,
+    "n": 211654
+   }
+  ]
+ },
+ "tapped_out": {
+  "ump_strikes_outside_zone": [
+   {
+    "batting_club_out": false,
+    "n": 181235,
+    "strike_rate": 0.06637790713714238,
+    "expected": 0.07184253268323353
+   },
+   {
+    "batting_club_out": true,
+    "n": 6412,
+    "strike_rate": 0.06472239550842171,
+    "expected": 0.0687429543048737
+   }
+  ],
+  "ump_balls_inside_zone": [
+   {
+    "fielding_club_out": false,
+    "n": 108808,
+    "ball_rate": 0.09050805087861187,
+    "expected": 0.0979669804706299
+   },
+   {
+    "fielding_club_out": true,
+    "n": 3874,
+    "ball_rate": 0.0986060918946825,
+    "expected": 0.10151359238064006
+   }
+  ],
+  "gift_band_share": {
+   "batting_club_out": 0.0150848271446863,
+   "batting_club_has_one": 0.015544394832272324,
+   "n_out": 24992,
+   "n_has": 689123
+  },
+  "gift_band_regression": {
+   "coef_bat_out": 1.1192988443661545e-05,
+   "se": 0.0007949245122210425,
+   "baseline_share": 0.015528311266392668,
+   "n": 714115
+  }
+ },
+ "opponents": [
+  {
+   "team_id": 108,
+   "abbr": "LAA",
+   "name": "Los Angeles Angels",
+   "division": "American League West",
+   "games": 162,
+   "offense": {
+    "challenges": 111,
+    "per_game": 0.6851851851851852,
+    "overturn_rate": 0.5495495495495496,
+    "missed": 417,
+    "share_missed_fixed": 0.14628297362110312,
+    "wp_fixed": 1.2620501590917166,
+    "wp_missed": 5.027315759666965
+   },
+   "defense": {
+    "challenges": 150,
+    "per_game": 0.9259259259259259,
+    "overturn_rate": 0.58,
+    "missed": 429,
+    "share_missed_fixed": 0.20279720279720279,
+    "wp_fixed": 1.1149238569158575,
+    "wp_missed": 5.769751553059221
+   },
+   "tapped_out_7th_on": 0.083625,
+   "top_challengers": [
+    {
+     "name": "Logan O'Hoppe",
+     "role": "catcher",
+     "challenges": 66,
+     "overturns": 39.0
+    },
+    {
+     "name": "Nolan Schanuel",
+     "role": "hitter",
+     "challenges": 29,
+     "overturns": 17.0
+    },
+    {
+     "name": "Tyler Heineman",
+     "role": "catcher",
+     "challenges": 28,
+     "overturns": 16.0
+    },
+    {
+     "name": "Mois\u00e9s Ballesteros",
+     "role": "catcher",
+     "challenges": 25,
+     "overturns": 14.0
+    },
+    {
+     "name": "Zach Neto",
+     "role": "hitter",
+     "challenges": 21,
+     "overturns": 15.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 147,
+     "overturns": 86
+    },
+    "hitter": {
+     "challenges": 111,
+     "overturns": 61
+    },
+    "pitcher": {
+     "challenges": 3,
+     "overturns": 1
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 78
+    },
+    {
+     "count": "1-0",
+     "n": 38
+    },
+    {
+     "count": "1-1",
+     "n": 35
+    }
+   ]
+  },
+  {
+   "team_id": 109,
+   "abbr": "AZ",
+   "name": "Arizona Diamondbacks",
+   "division": "National League West",
+   "games": 162,
+   "offense": {
+    "challenges": 118,
+    "per_game": 0.7283950617283951,
+    "overturn_rate": 0.635593220338983,
+    "missed": 452,
+    "share_missed_fixed": 0.16592920353982302,
+    "wp_fixed": 1.6092225140240137,
+    "wp_missed": 6.0948426059202925
+   },
+   "defense": {
+    "challenges": 127,
+    "per_game": 0.7839506172839507,
+    "overturn_rate": 0.5984251968503937,
+    "missed": 315,
+    "share_missed_fixed": 0.24126984126984127,
+    "wp_fixed": 0.8199537201397749,
+    "wp_missed": 3.7339584920711966
+   },
+   "tapped_out_7th_on": 0.04859744094488189,
+   "top_challengers": [
+    {
+     "name": "Gabriel Moreno",
+     "role": "catcher",
+     "challenges": 66,
+     "overturns": 40.0
+    },
+    {
+     "name": "James McCann",
+     "role": "catcher",
+     "challenges": 48,
+     "overturns": 26.0
+    },
+    {
+     "name": "Geraldo Perdomo",
+     "role": "hitter",
+     "challenges": 26,
+     "overturns": 14.0
+    },
+    {
+     "name": "Gabriel Moreno",
+     "role": "hitter",
+     "challenges": 24,
+     "overturns": 16.0
+    },
+    {
+     "name": "Nolan Arenado",
+     "role": "hitter",
+     "challenges": 13,
+     "overturns": 10.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 124,
+     "overturns": 74
+    },
+    "hitter": {
+     "challenges": 118,
+     "overturns": 75
+    },
+    "pitcher": {
+     "challenges": 3,
+     "overturns": 2
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 86
+    },
+    {
+     "count": "1-0",
+     "n": 35
+    },
+    {
+     "count": "2-1",
+     "n": 27
+    }
+   ]
+  },
+  {
+   "team_id": 110,
+   "abbr": "BAL",
+   "name": "Baltimore Orioles",
+   "division": "American League East",
+   "games": 161,
+   "offense": {
+    "challenges": 121,
+    "per_game": 0.7515527950310559,
+    "overturn_rate": 0.5041322314049587,
+    "missed": 446,
+    "share_missed_fixed": 0.1367713004484305,
+    "wp_fixed": 1.1075752162449344,
+    "wp_missed": 5.507366264989788
+   },
+   "defense": {
+    "challenges": 122,
+    "per_game": 0.7577639751552795,
+    "overturn_rate": 0.4672131147540984,
+    "missed": 357,
+    "share_missed_fixed": 0.15966386554621848,
+    "wp_fixed": 0.6751362407359642,
+    "wp_missed": 4.348922915277941
+   },
+   "tapped_out_7th_on": 0.1073867948393625,
+   "top_challengers": [
+    {
+     "name": "Samuel Basallo",
+     "role": "catcher",
+     "challenges": 42,
+     "overturns": 18.0
+    },
+    {
+     "name": "Adley Rutschman",
+     "role": "catcher",
+     "challenges": 24,
+     "overturns": 15.0
+    },
+    {
+     "name": "Carlos Narv\u00e1ez",
+     "role": "catcher",
+     "challenges": 19,
+     "overturns": 8.0
+    },
+    {
+     "name": "Samuel Basallo",
+     "role": "hitter",
+     "challenges": 15,
+     "overturns": 7.0
+    },
+    {
+     "name": "Coby Mayo",
+     "role": "hitter",
+     "challenges": 15,
+     "overturns": 8.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 110,
+     "overturns": 53
+    },
+    "hitter": {
+     "challenges": 121,
+     "overturns": 61
+    },
+    "pitcher": {
+     "challenges": 12,
+     "overturns": 4
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 69
+    },
+    {
+     "count": "1-1",
+     "n": 34
+    },
+    {
+     "count": "0-1",
+     "n": 34
+    }
+   ]
+  },
+  {
+   "team_id": 111,
+   "abbr": "BOS",
+   "name": "Boston Red Sox",
+   "division": "American League East",
+   "games": 162,
+   "offense": {
+    "challenges": 120,
+    "per_game": 0.7407407407407407,
+    "overturn_rate": 0.6083333333333333,
+    "missed": 423,
+    "share_missed_fixed": 0.17257683215130024,
+    "wp_fixed": 1.0977530006922933,
+    "wp_missed": 5.508939437762159
+   },
+   "defense": {
+    "challenges": 108,
+    "per_game": 0.6666666666666666,
+    "overturn_rate": 0.5185185185185185,
+    "missed": 336,
+    "share_missed_fixed": 0.16666666666666666,
+    "wp_fixed": 0.5682652718898284,
+    "wp_missed": 4.520220649948893
+   },
+   "tapped_out_7th_on": 0.04119947848761408,
+   "top_challengers": [
+    {
+     "name": "Carlos Narv\u00e1ez",
+     "role": "catcher",
+     "challenges": 41,
+     "overturns": 16.0
+    },
+    {
+     "name": "Connor Wong",
+     "role": "catcher",
+     "challenges": 32,
+     "overturns": 18.0
+    },
+    {
+     "name": "Caleb Durbin",
+     "role": "hitter",
+     "challenges": 24,
+     "overturns": 16.0
+    },
+    {
+     "name": "Adley Rutschman",
+     "role": "catcher",
+     "challenges": 23,
+     "overturns": 15.0
+    },
+    {
+     "name": "Ceddanne Rafaela",
+     "role": "hitter",
+     "challenges": 18,
+     "overturns": 6.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 105,
+     "overturns": 55
+    },
+    "hitter": {
+     "challenges": 120,
+     "overturns": 73
+    },
+    "pitcher": {
+     "challenges": 3,
+     "overturns": 1
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 65
+    },
+    {
+     "count": "1-1",
+     "n": 37
+    },
+    {
+     "count": "0-1",
+     "n": 24
+    }
+   ]
+  },
+  {
+   "team_id": 112,
+   "abbr": "CHC",
+   "name": "Chicago Cubs",
+   "division": "National League Central",
+   "games": 162,
+   "offense": {
+    "challenges": 117,
+    "per_game": 0.7222222222222222,
+    "overturn_rate": 0.5726495726495726,
+    "missed": 415,
+    "share_missed_fixed": 0.1614457831325301,
+    "wp_fixed": 1.1442346687165303,
+    "wp_missed": 4.7412143790618195
+   },
+   "defense": {
+    "challenges": 135,
+    "per_game": 0.8333333333333334,
+    "overturn_rate": 0.6444444444444445,
+    "missed": 352,
+    "share_missed_fixed": 0.2471590909090909,
+    "wp_fixed": 0.9554968985566142,
+    "wp_missed": 4.172820773917247
+   },
+   "tapped_out_7th_on": 0.039222829386763816,
+   "top_challengers": [
+    {
+     "name": "Carson Kelly",
+     "role": "catcher",
+     "challenges": 70,
+     "overturns": 44.0
+    },
+    {
+     "name": "Miguel Amaya",
+     "role": "catcher",
+     "challenges": 59,
+     "overturns": 41.0
+    },
+    {
+     "name": "Alex Bregman",
+     "role": "hitter",
+     "challenges": 21,
+     "overturns": 13.0
+    },
+    {
+     "name": "Nico Hoerner",
+     "role": "hitter",
+     "challenges": 18,
+     "overturns": 8.0
+    },
+    {
+     "name": "Michael Busch",
+     "role": "hitter",
+     "challenges": 15,
+     "overturns": 7.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 133,
+     "overturns": 86
+    },
+    "hitter": {
+     "challenges": 117,
+     "overturns": 67
+    },
+    "pitcher": {
+     "challenges": 2,
+     "overturns": 1
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 73
+    },
+    {
+     "count": "1-0",
+     "n": 39
+    },
+    {
+     "count": "0-1",
+     "n": 36
+    }
+   ]
+  },
+  {
+   "team_id": 113,
+   "abbr": "CIN",
+   "name": "Cincinnati Reds",
+   "division": "National League Central",
+   "games": 162,
+   "offense": {
+    "challenges": 124,
+    "per_game": 0.7654320987654321,
+    "overturn_rate": 0.5887096774193549,
+    "missed": 455,
+    "share_missed_fixed": 0.16043956043956045,
+    "wp_fixed": 1.571182253304392,
+    "wp_missed": 5.808046660850781
+   },
+   "defense": {
+    "challenges": 153,
+    "per_game": 0.9444444444444444,
+    "overturn_rate": 0.6274509803921569,
+    "missed": 415,
+    "share_missed_fixed": 0.23132530120481928,
+    "wp_fixed": 1.1591506032849654,
+    "wp_missed": 5.162774306894158
+   },
+   "tapped_out_7th_on": 0.040492055356227574,
+   "top_challengers": [
+    {
+     "name": "Tyler Stephenson",
+     "role": "catcher",
+     "challenges": 111,
+     "overturns": 72.0
+    },
+    {
+     "name": "Sal Stewart",
+     "role": "hitter",
+     "challenges": 46,
+     "overturns": 26.0
+    },
+    {
+     "name": "Jose Trevino",
+     "role": "catcher",
+     "challenges": 28,
+     "overturns": 14.0
+    },
+    {
+     "name": "JJ Bleday",
+     "role": "hitter",
+     "challenges": 22,
+     "overturns": 11.0
+    },
+    {
+     "name": "Elly De La Cruz",
+     "role": "hitter",
+     "challenges": 12,
+     "overturns": 6.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 153,
+     "overturns": 96
+    },
+    "hitter": {
+     "challenges": 124,
+     "overturns": 73
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 69
+    },
+    {
+     "count": "0-1",
+     "n": 44
+    },
+    {
+     "count": "1-1",
+     "n": 42
+    }
+   ]
+  },
+  {
+   "team_id": 114,
+   "abbr": "CLE",
+   "name": "Cleveland Guardians",
+   "division": "American League Central",
+   "games": 162,
+   "offense": {
+    "challenges": 95,
+    "per_game": 0.5864197530864198,
+    "overturn_rate": 0.5368421052631579,
+    "missed": 430,
+    "share_missed_fixed": 0.1186046511627907,
+    "wp_fixed": 0.7359481924136573,
+    "wp_missed": 5.544032048982576
+   },
+   "defense": {
+    "challenges": 153,
+    "per_game": 0.9444444444444444,
+    "overturn_rate": 0.5032679738562091,
+    "missed": 330,
+    "share_missed_fixed": 0.23333333333333334,
+    "wp_fixed": 1.1155897631614666,
+    "wp_missed": 4.793995659409406
+   },
+   "tapped_out_7th_on": 0.06489675516224189,
+   "top_challengers": [
+    {
+     "name": "Patrick Bailey",
+     "role": "catcher",
+     "challenges": 89,
+     "overturns": 49.0
+    },
+    {
+     "name": "Austin Hedges",
+     "role": "catcher",
+     "challenges": 52,
+     "overturns": 24.0
+    },
+    {
+     "name": "Brayan Rocchio",
+     "role": "hitter",
+     "challenges": 14,
+     "overturns": 7.0
+    },
+    {
+     "name": "Travis Bazzana",
+     "role": "hitter",
+     "challenges": 13,
+     "overturns": 6.0
+    },
+    {
+     "name": "Chase DeLauter",
+     "role": "hitter",
+     "challenges": 13,
+     "overturns": 7.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 150,
+     "overturns": 75
+    },
+    "hitter": {
+     "challenges": 95,
+     "overturns": 51
+    },
+    "pitcher": {
+     "challenges": 3,
+     "overturns": 2
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 80
+    },
+    {
+     "count": "1-1",
+     "n": 37
+    },
+    {
+     "count": "0-1",
+     "n": 31
+    }
+   ]
+  },
+  {
+   "team_id": 115,
+   "abbr": "COL",
+   "name": "Colorado Rockies",
+   "division": "National League West",
+   "games": 162,
+   "offense": {
+    "challenges": 135,
+    "per_game": 0.8333333333333334,
+    "overturn_rate": 0.4888888888888889,
+    "missed": 365,
+    "share_missed_fixed": 0.18082191780821918,
+    "wp_fixed": 1.0791246884635852,
+    "wp_missed": 4.529631379271635
+   },
+   "defense": {
+    "challenges": 151,
+    "per_game": 0.9320987654320988,
+    "overturn_rate": 0.609271523178808,
+    "missed": 331,
+    "share_missed_fixed": 0.27794561933534745,
+    "wp_fixed": 1.0988110778067,
+    "wp_missed": 4.184718500943589
+   },
+   "tapped_out_7th_on": 0.11658894070619587,
+   "top_challengers": [
+    {
+     "name": "Hunter Goodman",
+     "role": "catcher",
+     "challenges": 81,
+     "overturns": 53.0
+    },
+    {
+     "name": "Brett Sullivan",
+     "role": "catcher",
+     "challenges": 55,
+     "overturns": 29.0
+    },
+    {
+     "name": "Cole Carrigg",
+     "role": "hitter",
+     "challenges": 24,
+     "overturns": 12.0
+    },
+    {
+     "name": "TJ Rumfield",
+     "role": "hitter",
+     "challenges": 15,
+     "overturns": 7.0
+    },
+    {
+     "name": "Edouard Julien",
+     "role": "hitter",
+     "challenges": 15,
+     "overturns": 9.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 146,
+     "overturns": 89
+    },
+    "hitter": {
+     "challenges": 135,
+     "overturns": 66
+    },
+    "pitcher": {
+     "challenges": 5,
+     "overturns": 3
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 100
+    },
+    {
+     "count": "1-0",
+     "n": 34
+    },
+    {
+     "count": "1-1",
+     "n": 34
+    }
+   ]
+  },
+  {
+   "team_id": 116,
+   "abbr": "DET",
+   "name": "Detroit Tigers",
+   "division": "American League Central",
+   "games": 162,
+   "offense": {
+    "challenges": 135,
+    "per_game": 0.8333333333333334,
+    "overturn_rate": 0.6148148148148148,
+    "missed": 450,
+    "share_missed_fixed": 0.18444444444444444,
+    "wp_fixed": 1.2085685088734843,
+    "wp_missed": 5.556904768980536
+   },
+   "defense": {
+    "challenges": 124,
+    "per_game": 0.7654320987654321,
+    "overturn_rate": 0.5806451612903226,
+    "missed": 323,
+    "share_missed_fixed": 0.22291021671826625,
+    "wp_fixed": 0.6720372575484744,
+    "wp_missed": 3.431452554259479
+   },
+   "tapped_out_7th_on": 0.05920969574548668,
+   "top_challengers": [
+    {
+     "name": "Dillon Dingler",
+     "role": "catcher",
+     "challenges": 85,
+     "overturns": 52.0
+    },
+    {
+     "name": "Kevin McGonigle",
+     "role": "hitter",
+     "challenges": 25,
+     "overturns": 16.0
+    },
+    {
+     "name": "Spencer Torkelson",
+     "role": "hitter",
+     "challenges": 22,
+     "overturns": 11.0
+    },
+    {
+     "name": "Eduardo Valencia",
+     "role": "catcher",
+     "challenges": 15,
+     "overturns": 6.0
+    },
+    {
+     "name": "Jake Rogers",
+     "role": "catcher",
+     "challenges": 15,
+     "overturns": 8.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 115,
+     "overturns": 66
+    },
+    "hitter": {
+     "challenges": 135,
+     "overturns": 83
+    },
+    "pitcher": {
+     "challenges": 9,
+     "overturns": 6
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 84
+    },
+    {
+     "count": "1-1",
+     "n": 38
+    },
+    {
+     "count": "0-1",
+     "n": 34
+    }
+   ]
+  },
+  {
+   "team_id": 117,
+   "abbr": "HOU",
+   "name": "Houston Astros",
+   "division": "American League West",
+   "games": 162,
+   "offense": {
+    "challenges": 149,
+    "per_game": 0.9197530864197531,
+    "overturn_rate": 0.5503355704697986,
+    "missed": 392,
+    "share_missed_fixed": 0.20918367346938777,
+    "wp_fixed": 0.9615841134386445,
+    "wp_missed": 4.689988090297432
+   },
+   "defense": {
+    "challenges": 158,
+    "per_game": 0.9753086419753086,
+    "overturn_rate": 0.5569620253164557,
+    "missed": 363,
+    "share_missed_fixed": 0.24242424242424243,
+    "wp_fixed": 1.0765342128784812,
+    "wp_missed": 4.035591528094566
+   },
+   "tapped_out_7th_on": 0.1302948371314536,
+   "top_challengers": [
+    {
+     "name": "Yainer Diaz",
+     "role": "catcher",
+     "challenges": 85,
+     "overturns": 49.0
+    },
+    {
+     "name": "Christian V\u00e1zquez",
+     "role": "catcher",
+     "challenges": 65,
+     "overturns": 37.0
+    },
+    {
+     "name": "Jose Altuve",
+     "role": "hitter",
+     "challenges": 30,
+     "overturns": 19.0
+    },
+    {
+     "name": "Cam Smith",
+     "role": "hitter",
+     "challenges": 26,
+     "overturns": 11.0
+    },
+    {
+     "name": "Christian Walker",
+     "role": "hitter",
+     "challenges": 22,
+     "overturns": 10.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 156,
+     "overturns": 88
+    },
+    "hitter": {
+     "challenges": 149,
+     "overturns": 82
+    },
+    "pitcher": {
+     "challenges": 2,
+     "overturns": 0
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 91
+    },
+    {
+     "count": "1-1",
+     "n": 52
+    },
+    {
+     "count": "0-1",
+     "n": 48
+    }
+   ]
+  },
+  {
+   "team_id": 118,
+   "abbr": "KC",
+   "name": "Kansas City Royals",
+   "division": "American League Central",
+   "games": 162,
+   "offense": {
+    "challenges": 111,
+    "per_game": 0.6851851851851852,
+    "overturn_rate": 0.6666666666666666,
+    "missed": 416,
+    "share_missed_fixed": 0.1778846153846154,
+    "wp_fixed": 0.9503205112109927,
+    "wp_missed": 4.856325362580055
+   },
+   "defense": {
+    "challenges": 139,
+    "per_game": 0.8580246913580247,
+    "overturn_rate": 0.5611510791366906,
+    "missed": 364,
+    "share_missed_fixed": 0.21428571428571427,
+    "wp_fixed": 1.0328602932738855,
+    "wp_missed": 4.232016826385371
+   },
+   "tapped_out_7th_on": 0.050039925472451424,
+   "top_challengers": [
+    {
+     "name": "Carter Jensen",
+     "role": "catcher",
+     "challenges": 74,
+     "overturns": 38.0
+    },
+    {
+     "name": "Salvador Perez",
+     "role": "catcher",
+     "challenges": 51,
+     "overturns": 36.0
+    },
+    {
+     "name": "Maikel Garcia",
+     "role": "hitter",
+     "challenges": 20,
+     "overturns": 14.0
+    },
+    {
+     "name": "Isaac Collins",
+     "role": "hitter",
+     "challenges": 18,
+     "overturns": 10.0
+    },
+    {
+     "name": "Nick Loftin",
+     "role": "hitter",
+     "challenges": 16,
+     "overturns": 8.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 136,
+     "overturns": 78
+    },
+    "hitter": {
+     "challenges": 111,
+     "overturns": 74
+    },
+    "pitcher": {
+     "challenges": 3,
+     "overturns": 0
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 72
+    },
+    {
+     "count": "0-1",
+     "n": 33
+    },
+    {
+     "count": "1-1",
+     "n": 32
+    }
+   ]
+  },
+  {
+   "team_id": 119,
+   "abbr": "LAD",
+   "name": "Los Angeles Dodgers",
+   "division": "National League West",
+   "games": 162,
+   "offense": {
+    "challenges": 110,
+    "per_game": 0.6790123456790124,
+    "overturn_rate": 0.6272727272727273,
+    "missed": 424,
+    "share_missed_fixed": 0.16273584905660377,
+    "wp_fixed": 0.9013317676243313,
+    "wp_missed": 4.856163950997072
+   },
+   "defense": {
+    "challenges": 117,
+    "per_game": 0.7222222222222222,
+    "overturn_rate": 0.5128205128205128,
+    "missed": 325,
+    "share_missed_fixed": 0.18461538461538463,
+    "wp_fixed": 0.8340658406537256,
+    "wp_missed": 4.291526408092807
+   },
+   "tapped_out_7th_on": 0.052138863606813156,
+   "top_challengers": [
+    {
+     "name": "Will Smith",
+     "role": "catcher",
+     "challenges": 46,
+     "overturns": 25.0
+    },
+    {
+     "name": "Dalton Rushing",
+     "role": "catcher",
+     "challenges": 29,
+     "overturns": 14.0
+    },
+    {
+     "name": "Hunter Feduccia",
+     "role": "catcher",
+     "challenges": 23,
+     "overturns": 11.0
+    },
+    {
+     "name": "Andy Pages",
+     "role": "hitter",
+     "challenges": 19,
+     "overturns": 10.0
+    },
+    {
+     "name": "Teoscar Hern\u00e1ndez",
+     "role": "hitter",
+     "challenges": 16,
+     "overturns": 11.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 110,
+     "overturns": 57
+    },
+    "hitter": {
+     "challenges": 110,
+     "overturns": 69
+    },
+    "pitcher": {
+     "challenges": 7,
+     "overturns": 3
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 65
+    },
+    {
+     "count": "1-0",
+     "n": 34
+    },
+    {
+     "count": "0-1",
+     "n": 27
+    }
+   ]
+  },
+  {
+   "team_id": 120,
+   "abbr": "WSH",
+   "name": "Washington Nationals",
+   "division": "National League East",
+   "games": 162,
+   "offense": {
+    "challenges": 97,
+    "per_game": 0.5987654320987654,
+    "overturn_rate": 0.5257731958762887,
+    "missed": 447,
+    "share_missed_fixed": 0.11409395973154363,
+    "wp_fixed": 0.9277694135569361,
+    "wp_missed": 5.6161306193261
+   },
+   "defense": {
+    "challenges": 172,
+    "per_game": 1.0617283950617284,
+    "overturn_rate": 0.5290697674418605,
+    "missed": 370,
+    "share_missed_fixed": 0.24594594594594596,
+    "wp_fixed": 1.3791850012155598,
+    "wp_missed": 4.678770578678444
+   },
+   "tapped_out_7th_on": 0.07017317136210907,
+   "top_challengers": [
+    {
+     "name": "Keibert Ruiz",
+     "role": "catcher",
+     "challenges": 96,
+     "overturns": 53.0
+    },
+    {
+     "name": "Drew Millas",
+     "role": "catcher",
+     "challenges": 46,
+     "overturns": 19.0
+    },
+    {
+     "name": "Harry Ford",
+     "role": "catcher",
+     "challenges": 27,
+     "overturns": 16.0
+    },
+    {
+     "name": "James Wood",
+     "role": "hitter",
+     "challenges": 20,
+     "overturns": 7.0
+    },
+    {
+     "name": "CJ Abrams",
+     "role": "hitter",
+     "challenges": 11,
+     "overturns": 10.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 169,
+     "overturns": 88
+    },
+    "hitter": {
+     "challenges": 97,
+     "overturns": 51
+    },
+    "pitcher": {
+     "challenges": 3,
+     "overturns": 3
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 78
+    },
+    {
+     "count": "0-1",
+     "n": 40
+    },
+    {
+     "count": "1-0",
+     "n": 39
+    }
+   ]
+  },
+  {
+   "team_id": 121,
+   "abbr": "NYM",
+   "name": "New York Mets",
+   "division": "National League East",
+   "games": 162,
+   "offense": {
+    "challenges": 146,
+    "per_game": 0.9012345679012346,
+    "overturn_rate": 0.5821917808219178,
+    "missed": 447,
+    "share_missed_fixed": 0.18791946308724833,
+    "wp_fixed": 1.2690031444209644,
+    "wp_missed": 5.731780276847539
+   },
+   "defense": {
+    "challenges": 146,
+    "per_game": 0.9012345679012346,
+    "overturn_rate": 0.4794520547945205,
+    "missed": 315,
+    "share_missed_fixed": 0.2222222222222222,
+    "wp_fixed": 1.0166788984621045,
+    "wp_missed": 4.416816504033847
+   },
+   "tapped_out_7th_on": 0.10297935467919397,
+   "top_challengers": [
+    {
+     "name": "Francisco Alvarez",
+     "role": "catcher",
+     "challenges": 70,
+     "overturns": 29.0
+    },
+    {
+     "name": "Luis Torrens",
+     "role": "catcher",
+     "challenges": 68,
+     "overturns": 37.0
+    },
+    {
+     "name": "Francisco Alvarez",
+     "role": "hitter",
+     "challenges": 21,
+     "overturns": 10.0
+    },
+    {
+     "name": "Mark Vientos",
+     "role": "hitter",
+     "challenges": 20,
+     "overturns": 13.0
+    },
+    {
+     "name": "A.J. Ewing",
+     "role": "hitter",
+     "challenges": 20,
+     "overturns": 11.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 138,
+     "overturns": 66
+    },
+    "hitter": {
+     "challenges": 146,
+     "overturns": 85
+    },
+    "pitcher": {
+     "challenges": 8,
+     "overturns": 4
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 97
+    },
+    {
+     "count": "1-0",
+     "n": 44
+    },
+    {
+     "count": "0-1",
+     "n": 34
+    }
+   ]
+  },
+  {
+   "team_id": 133,
+   "abbr": "ATH",
+   "name": "Athletics",
+   "division": "American League West",
+   "games": 162,
+   "offense": {
+    "challenges": 114,
+    "per_game": 0.7037037037037037,
+    "overturn_rate": 0.6929824561403509,
+    "missed": 411,
+    "share_missed_fixed": 0.19464720194647203,
+    "wp_fixed": 1.101534461921931,
+    "wp_missed": 4.9476987856870505
+   },
+   "defense": {
+    "challenges": 148,
+    "per_game": 0.9135802469135802,
+    "overturn_rate": 0.5608108108108109,
+    "missed": 404,
+    "share_missed_fixed": 0.20544554455445543,
+    "wp_fixed": 1.128293203735452,
+    "wp_missed": 5.328096337971243
+   },
+   "tapped_out_7th_on": 0.0639467962655071,
+   "top_challengers": [
+    {
+     "name": "Shea Langeliers",
+     "role": "catcher",
+     "challenges": 53,
+     "overturns": 29.0
+    },
+    {
+     "name": "Jonah Heim",
+     "role": "catcher",
+     "challenges": 53,
+     "overturns": 32.0
+    },
+    {
+     "name": "Lawrence Butler",
+     "role": "hitter",
+     "challenges": 22,
+     "overturns": 15.0
+    },
+    {
+     "name": "Austin Wynns",
+     "role": "catcher",
+     "challenges": 20,
+     "overturns": 10.0
+    },
+    {
+     "name": "Jeff McNeil",
+     "role": "hitter",
+     "challenges": 16,
+     "overturns": 9.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 140,
+     "overturns": 79
+    },
+    "hitter": {
+     "challenges": 114,
+     "overturns": 79
+    },
+    "pitcher": {
+     "challenges": 8,
+     "overturns": 4
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 78
+    },
+    {
+     "count": "0-1",
+     "n": 34
+    },
+    {
+     "count": "1-1",
+     "n": 32
+    }
+   ]
+  },
+  {
+   "team_id": 134,
+   "abbr": "PIT",
+   "name": "Pittsburgh Pirates",
+   "division": "National League Central",
+   "games": 162,
+   "offense": {
+    "challenges": 118,
+    "per_game": 0.7283950617283951,
+    "overturn_rate": 0.5338983050847458,
+    "missed": 426,
+    "share_missed_fixed": 0.14788732394366197,
+    "wp_fixed": 0.7546103718236918,
+    "wp_missed": 4.73741667808698
+   },
+   "defense": {
+    "challenges": 149,
+    "per_game": 0.9197530864197531,
+    "overturn_rate": 0.4697986577181208,
+    "missed": 357,
+    "share_missed_fixed": 0.19607843137254902,
+    "wp_fixed": 0.9097379462672042,
+    "wp_missed": 4.8415134326188625
+   },
+   "tapped_out_7th_on": 0.10425138632162662,
+   "top_challengers": [
+    {
+     "name": "Henry Davis",
+     "role": "catcher",
+     "challenges": 75,
+     "overturns": 35.0
+    },
+    {
+     "name": "Rafael Flores Jr.",
+     "role": "catcher",
+     "challenges": 32,
+     "overturns": 16.0
+    },
+    {
+     "name": "Marcell Ozuna",
+     "role": "hitter",
+     "challenges": 19,
+     "overturns": 10.0
+    },
+    {
+     "name": "Endy Rodr\u00edguez",
+     "role": "catcher",
+     "challenges": 19,
+     "overturns": 8.0
+    },
+    {
+     "name": "Bryan Reynolds",
+     "role": "hitter",
+     "challenges": 16,
+     "overturns": 7.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 138,
+     "overturns": 65
+    },
+    "hitter": {
+     "challenges": 118,
+     "overturns": 63
+    },
+    "pitcher": {
+     "challenges": 11,
+     "overturns": 5
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 82
+    },
+    {
+     "count": "1-1",
+     "n": 39
+    },
+    {
+     "count": "0-1",
+     "n": 32
+    }
+   ]
+  },
+  {
+   "team_id": 135,
+   "abbr": "SD",
+   "name": "San Diego Padres",
+   "division": "National League West",
+   "games": 162,
+   "offense": {
+    "challenges": 97,
+    "per_game": 0.5987654320987654,
+    "overturn_rate": 0.5567010309278351,
+    "missed": 378,
+    "share_missed_fixed": 0.14285714285714285,
+    "wp_fixed": 1.2150280273034393,
+    "wp_missed": 5.267580050522547
+   },
+   "defense": {
+    "challenges": 157,
+    "per_game": 0.9691358024691358,
+    "overturn_rate": 0.5095541401273885,
+    "missed": 343,
+    "share_missed_fixed": 0.23323615160349853,
+    "wp_fixed": 0.9920972319893725,
+    "wp_missed": 4.881284883550977
+   },
+   "tapped_out_7th_on": 0.09932485068813295,
+   "top_challengers": [
+    {
+     "name": "Luis Campusano",
+     "role": "catcher",
+     "challenges": 71,
+     "overturns": 41.0
+    },
+    {
+     "name": "Freddy Fermin",
+     "role": "catcher",
+     "challenges": 53,
+     "overturns": 19.0
+    },
+    {
+     "name": "Xander Bogaerts",
+     "role": "hitter",
+     "challenges": 30,
+     "overturns": 18.0
+    },
+    {
+     "name": "Manny Machado",
+     "role": "hitter",
+     "challenges": 21,
+     "overturns": 10.0
+    },
+    {
+     "name": "Rodolfo Dur\u00e1n",
+     "role": "catcher",
+     "challenges": 15,
+     "overturns": 9.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 153,
+     "overturns": 77
+    },
+    "hitter": {
+     "challenges": 97,
+     "overturns": 54
+    },
+    "pitcher": {
+     "challenges": 4,
+     "overturns": 3
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 57
+    },
+    {
+     "count": "1-0",
+     "n": 36
+    },
+    {
+     "count": "0-1",
+     "n": 36
+    }
+   ]
+  },
+  {
+   "team_id": 136,
+   "abbr": "SEA",
+   "name": "Seattle Mariners",
+   "division": "American League West",
+   "games": 162,
+   "offense": {
+    "challenges": 107,
+    "per_game": 0.6604938271604939,
+    "overturn_rate": 0.5233644859813084,
+    "missed": 423,
+    "share_missed_fixed": 0.13238770685579196,
+    "wp_fixed": 0.834858759244776,
+    "wp_missed": 5.611296572459782
+   },
+   "defense": {
+    "challenges": 118,
+    "per_game": 0.7283950617283951,
+    "overturn_rate": 0.5508474576271186,
+    "missed": 328,
+    "share_missed_fixed": 0.19817073170731708,
+    "wp_fixed": 0.8853651787264756,
+    "wp_missed": 4.52516289308574
+   },
+   "tapped_out_7th_on": 0.07290448343079922,
+   "top_challengers": [
+    {
+     "name": "Cal Raleigh",
+     "role": "catcher",
+     "challenges": 59,
+     "overturns": 35.0
+    },
+    {
+     "name": "Jhonny Pereda",
+     "role": "catcher",
+     "challenges": 29,
+     "overturns": 11.0
+    },
+    {
+     "name": "Mitch Garver",
+     "role": "catcher",
+     "challenges": 24,
+     "overturns": 17.0
+    },
+    {
+     "name": "Josh Naylor",
+     "role": "hitter",
+     "challenges": 22,
+     "overturns": 6.0
+    },
+    {
+     "name": "Randy Arozarena",
+     "role": "hitter",
+     "challenges": 18,
+     "overturns": 8.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 112,
+     "overturns": 63
+    },
+    "hitter": {
+     "challenges": 107,
+     "overturns": 56
+    },
+    "pitcher": {
+     "challenges": 6,
+     "overturns": 2
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 75
+    },
+    {
+     "count": "0-1",
+     "n": 32
+    },
+    {
+     "count": "1-0",
+     "n": 31
+    }
+   ]
+  },
+  {
+   "team_id": 137,
+   "abbr": "SF",
+   "name": "San Francisco Giants",
+   "division": "National League West",
+   "games": 162,
+   "offense": {
+    "challenges": 105,
+    "per_game": 0.6481481481481481,
+    "overturn_rate": 0.5714285714285714,
+    "missed": 412,
+    "share_missed_fixed": 0.14563106796116504,
+    "wp_fixed": 0.9977343504857985,
+    "wp_missed": 5.390409615993681
+   },
+   "defense": {
+    "challenges": 155,
+    "per_game": 0.9567901234567902,
+    "overturn_rate": 0.535483870967742,
+    "missed": 348,
+    "share_missed_fixed": 0.23850574712643677,
+    "wp_fixed": 1.143397429909205,
+    "wp_missed": 4.2759252535609065
+   },
+   "tapped_out_7th_on": 0.07703134996801024,
+   "top_challengers": [
+    {
+     "name": "Drew Cavanaugh",
+     "role": "catcher",
+     "challenges": 40,
+     "overturns": 18.0
+    },
+    {
+     "name": "Daniel Susac",
+     "role": "catcher",
+     "challenges": 36,
+     "overturns": 18.0
+    },
+    {
+     "name": "Andrew Knizner",
+     "role": "catcher",
+     "challenges": 28,
+     "overturns": 19.0
+    },
+    {
+     "name": "Patrick Bailey",
+     "role": "catcher",
+     "challenges": 22,
+     "overturns": 12.0
+    },
+    {
+     "name": "Eric Haase",
+     "role": "catcher",
+     "challenges": 18,
+     "overturns": 11.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 151,
+     "overturns": 81
+    },
+    "hitter": {
+     "challenges": 105,
+     "overturns": 60
+    },
+    "pitcher": {
+     "challenges": 4,
+     "overturns": 2
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 69
+    },
+    {
+     "count": "0-1",
+     "n": 41
+    },
+    {
+     "count": "1-1",
+     "n": 29
+    }
+   ]
+  },
+  {
+   "team_id": 138,
+   "abbr": "STL",
+   "name": "St. Louis Cardinals",
+   "division": "National League Central",
+   "games": 162,
+   "offense": {
+    "challenges": 99,
+    "per_game": 0.6111111111111112,
+    "overturn_rate": 0.5555555555555556,
+    "missed": 404,
+    "share_missed_fixed": 0.13613861386138615,
+    "wp_fixed": 0.8334021553024562,
+    "wp_missed": 5.076735685918875
+   },
+   "defense": {
+    "challenges": 103,
+    "per_game": 0.6358024691358025,
+    "overturn_rate": 0.5048543689320388,
+    "missed": 317,
+    "share_missed_fixed": 0.1640378548895899,
+    "wp_fixed": 0.9637668232984762,
+    "wp_missed": 4.32950380678512
+   },
+   "tapped_out_7th_on": 0.026076952575738208,
+   "top_challengers": [
+    {
+     "name": "Iv\u00e1n Herrera",
+     "role": "catcher",
+     "challenges": 36,
+     "overturns": 21.0
+    },
+    {
+     "name": "Pedro Pag\u00e9s",
+     "role": "catcher",
+     "challenges": 33,
+     "overturns": 20.0
+    },
+    {
+     "name": "Leo Bernal",
+     "role": "catcher",
+     "challenges": 19,
+     "overturns": 9.0
+    },
+    {
+     "name": "Iv\u00e1n Herrera",
+     "role": "hitter",
+     "challenges": 15,
+     "overturns": 9.0
+    },
+    {
+     "name": "Jordan Walker",
+     "role": "hitter",
+     "challenges": 15,
+     "overturns": 7.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 101,
+     "overturns": 52
+    },
+    "hitter": {
+     "challenges": 99,
+     "overturns": 55
+    },
+    "pitcher": {
+     "challenges": 2,
+     "overturns": 0
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 61
+    },
+    {
+     "count": "1-1",
+     "n": 27
+    },
+    {
+     "count": "0-1",
+     "n": 24
+    }
+   ]
+  },
+  {
+   "team_id": 139,
+   "abbr": "TB",
+   "name": "Tampa Bay Rays",
+   "division": "American League East",
+   "games": 162,
+   "offense": {
+    "challenges": 113,
+    "per_game": 0.6975308641975309,
+    "overturn_rate": 0.584070796460177,
+    "missed": 453,
+    "share_missed_fixed": 0.1456953642384106,
+    "wp_fixed": 0.7184831938463685,
+    "wp_missed": 5.079082488751448
+   },
+   "defense": {
+    "challenges": 149,
+    "per_game": 0.9197530864197531,
+    "overturn_rate": 0.5838926174496645,
+    "missed": 333,
+    "share_missed_fixed": 0.26126126126126126,
+    "wp_fixed": 0.9586815758792654,
+    "wp_missed": 3.708054527522315
+   },
+   "tapped_out_7th_on": 0.04164420485175202,
+   "top_challengers": [
+    {
+     "name": "Nick Fortes",
+     "role": "catcher",
+     "challenges": 90,
+     "overturns": 52.0
+    },
+    {
+     "name": "Hunter Feduccia",
+     "role": "catcher",
+     "challenges": 26,
+     "overturns": 17.0
+    },
+    {
+     "name": "Liam Hicks",
+     "role": "catcher",
+     "challenges": 26,
+     "overturns": 15.0
+    },
+    {
+     "name": "Junior Caminero",
+     "role": "hitter",
+     "challenges": 18,
+     "overturns": 8.0
+    },
+    {
+     "name": "Jonathan Aranda",
+     "role": "hitter",
+     "challenges": 16,
+     "overturns": 9.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 147,
+     "overturns": 86
+    },
+    "hitter": {
+     "challenges": 113,
+     "overturns": 66
+    },
+    "pitcher": {
+     "challenges": 2,
+     "overturns": 1
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 87
+    },
+    {
+     "count": "1-1",
+     "n": 42
+    },
+    {
+     "count": "0-1",
+     "n": 42
+    }
+   ]
+  },
+  {
+   "team_id": 140,
+   "abbr": "TEX",
+   "name": "Texas Rangers",
+   "division": "American League West",
+   "games": 162,
+   "offense": {
+    "challenges": 98,
+    "per_game": 0.6049382716049383,
+    "overturn_rate": 0.6428571428571429,
+    "missed": 407,
+    "share_missed_fixed": 0.1547911547911548,
+    "wp_fixed": 1.2537209990383633,
+    "wp_missed": 5.587438582096594
+   },
+   "defense": {
+    "challenges": 117,
+    "per_game": 0.7222222222222222,
+    "overturn_rate": 0.6239316239316239,
+    "missed": 354,
+    "share_missed_fixed": 0.2062146892655367,
+    "wp_fixed": 1.0823285737192727,
+    "wp_missed": 4.080789341307355
+   },
+   "tapped_out_7th_on": 0.03480802444533015,
+   "top_challengers": [
+    {
+     "name": "Elias D\u00edaz",
+     "role": "catcher",
+     "challenges": 44,
+     "overturns": 27.0
+    },
+    {
+     "name": "Kyle Higashioka",
+     "role": "catcher",
+     "challenges": 33,
+     "overturns": 21.0
+    },
+    {
+     "name": "Danny Jansen",
+     "role": "catcher",
+     "challenges": 21,
+     "overturns": 15.0
+    },
+    {
+     "name": "Jake Burger",
+     "role": "hitter",
+     "challenges": 14,
+     "overturns": 10.0
+    },
+    {
+     "name": "Austin Wynns",
+     "role": "catcher",
+     "challenges": 12,
+     "overturns": 7.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 110,
+     "overturns": 70
+    },
+    "hitter": {
+     "challenges": 98,
+     "overturns": 63
+    },
+    "pitcher": {
+     "challenges": 7,
+     "overturns": 3
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 55
+    },
+    {
+     "count": "1-1",
+     "n": 32
+    },
+    {
+     "count": "0-1",
+     "n": 26
+    }
+   ]
+  },
+  {
+   "team_id": 141,
+   "abbr": "TOR",
+   "name": "Toronto Blue Jays",
+   "division": "American League East",
+   "games": 162,
+   "offense": {
+    "challenges": 127,
+    "per_game": 0.7839506172839507,
+    "overturn_rate": 0.5984251968503937,
+    "missed": 407,
+    "share_missed_fixed": 0.18673218673218672,
+    "wp_fixed": 1.3354147544788235,
+    "wp_missed": 5.077748643431709
+   },
+   "defense": {
+    "challenges": 148,
+    "per_game": 0.9135802469135802,
+    "overturn_rate": 0.5067567567567568,
+    "missed": 291,
+    "share_missed_fixed": 0.25773195876288657,
+    "wp_fixed": 0.7644320202118311,
+    "wp_missed": 3.8322971785591515
+   },
+   "tapped_out_7th_on": 0.09732521186440678,
+   "top_challengers": [
+    {
+     "name": "Alejandro Kirk",
+     "role": "catcher",
+     "challenges": 76,
+     "overturns": 46.0
+    },
+    {
+     "name": "Brandon Valenzuela",
+     "role": "catcher",
+     "challenges": 54,
+     "overturns": 21.0
+    },
+    {
+     "name": "Alejandro Kirk",
+     "role": "hitter",
+     "challenges": 18,
+     "overturns": 8.0
+    },
+    {
+     "name": "Tyler Heineman",
+     "role": "catcher",
+     "challenges": 18,
+     "overturns": 8.0
+    },
+    {
+     "name": "Vladimir Guerrero Jr.",
+     "role": "hitter",
+     "challenges": 15,
+     "overturns": 7.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 148,
+     "overturns": 75
+    },
+    "hitter": {
+     "challenges": 127,
+     "overturns": 76
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 92
+    },
+    {
+     "count": "1-0",
+     "n": 39
+    },
+    {
+     "count": "0-1",
+     "n": 32
+    }
+   ]
+  },
+  {
+   "team_id": 142,
+   "abbr": "MIN",
+   "name": "Minnesota Twins",
+   "division": "American League Central",
+   "games": 162,
+   "offense": {
+    "challenges": 134,
+    "per_game": 0.8271604938271605,
+    "overturn_rate": 0.5,
+    "missed": 392,
+    "share_missed_fixed": 0.17091836734693877,
+    "wp_fixed": 0.9164225342406283,
+    "wp_missed": 4.293631127728794
+   },
+   "defense": {
+    "challenges": 192,
+    "per_game": 1.1851851851851851,
+    "overturn_rate": 0.5416666666666666,
+    "missed": 358,
+    "share_missed_fixed": 0.2905027932960894,
+    "wp_fixed": 1.4386355076651471,
+    "wp_missed": 5.012678996722648
+   },
+   "tapped_out_7th_on": 0.15112540192926044,
+   "top_challengers": [
+    {
+     "name": "Victor Caratini",
+     "role": "catcher",
+     "challenges": 96,
+     "overturns": 52.0
+    },
+    {
+     "name": "Ryan Jeffers",
+     "role": "catcher",
+     "challenges": 71,
+     "overturns": 42.0
+    },
+    {
+     "name": "Alex Jackson",
+     "role": "catcher",
+     "challenges": 25,
+     "overturns": 10.0
+    },
+    {
+     "name": "Luke Keaschall",
+     "role": "hitter",
+     "challenges": 23,
+     "overturns": 13.0
+    },
+    {
+     "name": "Josh Bell",
+     "role": "hitter",
+     "challenges": 18,
+     "overturns": 11.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 192,
+     "overturns": 104
+    },
+    "hitter": {
+     "challenges": 134,
+     "overturns": 67
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 99
+    },
+    {
+     "count": "0-1",
+     "n": 48
+    },
+    {
+     "count": "1-1",
+     "n": 47
+    }
+   ]
+  },
+  {
+   "team_id": 143,
+   "abbr": "PHI",
+   "name": "Philadelphia Phillies",
+   "division": "National League East",
+   "games": 162,
+   "offense": {
+    "challenges": 137,
+    "per_game": 0.845679012345679,
+    "overturn_rate": 0.583941605839416,
+    "missed": 385,
+    "share_missed_fixed": 0.21038961038961038,
+    "wp_fixed": 1.0131781011939696,
+    "wp_missed": 4.8314063446791415
+   },
+   "defense": {
+    "challenges": 114,
+    "per_game": 0.7037037037037037,
+    "overturn_rate": 0.6842105263157895,
+    "missed": 338,
+    "share_missed_fixed": 0.23076923076923078,
+    "wp_fixed": 0.7731469538784443,
+    "wp_missed": 3.963916445624305
+   },
+   "tapped_out_7th_on": 0.06819052483718555,
+   "top_challengers": [
+    {
+     "name": "J.T. Realmuto",
+     "role": "catcher",
+     "challenges": 66,
+     "overturns": 53.0
+    },
+    {
+     "name": "Bryce Harper",
+     "role": "hitter",
+     "challenges": 42,
+     "overturns": 20.0
+    },
+    {
+     "name": "Rafael March\u00e1n",
+     "role": "catcher",
+     "challenges": 24,
+     "overturns": 14.0
+    },
+    {
+     "name": "Alec Bohm",
+     "role": "hitter",
+     "challenges": 19,
+     "overturns": 12.0
+    },
+    {
+     "name": "Kyle Schwarber",
+     "role": "hitter",
+     "challenges": 19,
+     "overturns": 12.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 107,
+     "overturns": 77
+    },
+    "hitter": {
+     "challenges": 137,
+     "overturns": 80
+    },
+    "pitcher": {
+     "challenges": 7,
+     "overturns": 1
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 83
+    },
+    {
+     "count": "1-0",
+     "n": 34
+    },
+    {
+     "count": "0-1",
+     "n": 31
+    }
+   ]
+  },
+  {
+   "team_id": 144,
+   "abbr": "ATL",
+   "name": "Atlanta Braves",
+   "division": "National League East",
+   "games": 162,
+   "offense": {
+    "challenges": 77,
+    "per_game": 0.47530864197530864,
+    "overturn_rate": 0.5324675324675324,
+    "missed": 342,
+    "share_missed_fixed": 0.11988304093567251,
+    "wp_fixed": 0.6779269406645554,
+    "wp_missed": 3.8321946909524405
+   },
+   "defense": {
+    "challenges": 142,
+    "per_game": 0.8765432098765432,
+    "overturn_rate": 0.5915492957746479,
+    "missed": 315,
+    "share_missed_fixed": 0.26666666666666666,
+    "wp_fixed": 1.1105663615151946,
+    "wp_missed": 4.379836705349639
+   },
+   "tapped_out_7th_on": 0.05742935278030994,
+   "top_challengers": [
+    {
+     "name": "Drake Baldwin",
+     "role": "catcher",
+     "challenges": 46,
+     "overturns": 30.0
+    },
+    {
+     "name": "Sean Murphy",
+     "role": "catcher",
+     "challenges": 44,
+     "overturns": 26.0
+    },
+    {
+     "name": "Ronald Acu\u00f1a Jr.",
+     "role": "hitter",
+     "challenges": 19,
+     "overturns": 11.0
+    },
+    {
+     "name": "Jonah Heim",
+     "role": "catcher",
+     "challenges": 14,
+     "overturns": 7.0
+    },
+    {
+     "name": "Mauricio Dub\u00f3n",
+     "role": "hitter",
+     "challenges": 14,
+     "overturns": 7.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 139,
+     "overturns": 84
+    },
+    "hitter": {
+     "challenges": 77,
+     "overturns": 41
+    },
+    "pitcher": {
+     "challenges": 3,
+     "overturns": 0
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 74
+    },
+    {
+     "count": "0-1",
+     "n": 29
+    },
+    {
+     "count": "1-0",
+     "n": 29
+    }
+   ]
+  },
+  {
+   "team_id": 145,
+   "abbr": "CWS",
+   "name": "Chicago White Sox",
+   "division": "American League Central",
+   "games": 162,
+   "offense": {
+    "challenges": 126,
+    "per_game": 0.7777777777777778,
+    "overturn_rate": 0.5793650793650794,
+    "missed": 426,
+    "share_missed_fixed": 0.17136150234741784,
+    "wp_fixed": 1.1622182734136755,
+    "wp_missed": 5.045297070579913
+   },
+   "defense": {
+    "challenges": 220,
+    "per_game": 1.3580246913580247,
+    "overturn_rate": 0.4681818181818182,
+    "missed": 368,
+    "share_missed_fixed": 0.2798913043478261,
+    "wp_fixed": 1.3825916894034094,
+    "wp_missed": 4.894024856062365
+   },
+   "tapped_out_7th_on": 0.16734213622695776,
+   "top_challengers": [
+    {
+     "name": "Drew Romo",
+     "role": "catcher",
+     "challenges": 74,
+     "overturns": 34.0
+    },
+    {
+     "name": "Edgar Quero",
+     "role": "catcher",
+     "challenges": 72,
+     "overturns": 31.0
+    },
+    {
+     "name": "Kyle Teel",
+     "role": "catcher",
+     "challenges": 51,
+     "overturns": 28.0
+    },
+    {
+     "name": "Munetaka Murakami",
+     "role": "hitter",
+     "challenges": 29,
+     "overturns": 15.0
+    },
+    {
+     "name": "Sam Antonacci",
+     "role": "hitter",
+     "challenges": 27,
+     "overturns": 12.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 215,
+     "overturns": 103
+    },
+    "hitter": {
+     "challenges": 126,
+     "overturns": 73
+    },
+    "pitcher": {
+     "challenges": 5,
+     "overturns": 0
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 119
+    },
+    {
+     "count": "0-1",
+     "n": 55
+    },
+    {
+     "count": "1-1",
+     "n": 55
+    }
+   ]
+  },
+  {
+   "team_id": 146,
+   "abbr": "MIA",
+   "name": "Miami Marlins",
+   "division": "National League East",
+   "games": 162,
+   "offense": {
+    "challenges": 101,
+    "per_game": 0.6234567901234568,
+    "overturn_rate": 0.6435643564356436,
+    "missed": 467,
+    "share_missed_fixed": 0.139186295503212,
+    "wp_fixed": 1.3243001812575974,
+    "wp_missed": 6.071516706815001
+   },
+   "defense": {
+    "challenges": 194,
+    "per_game": 1.1975308641975309,
+    "overturn_rate": 0.5618556701030928,
+    "missed": 326,
+    "share_missed_fixed": 0.3343558282208589,
+    "wp_fixed": 1.1444272847512136,
+    "wp_missed": 3.9512250314600466
+   },
+   "tapped_out_7th_on": 0.10540788267644363,
+   "top_challengers": [
+    {
+     "name": "Joe Mack",
+     "role": "catcher",
+     "challenges": 87,
+     "overturns": 50.0
+    },
+    {
+     "name": "Liam Hicks",
+     "role": "catcher",
+     "challenges": 48,
+     "overturns": 25.0
+    },
+    {
+     "name": "Agust\u00edn Ram\u00edrez",
+     "role": "catcher",
+     "challenges": 35,
+     "overturns": 23.0
+    },
+    {
+     "name": "Brian Navarreto",
+     "role": "catcher",
+     "challenges": 21,
+     "overturns": 11.0
+    },
+    {
+     "name": "Otto Lopez",
+     "role": "hitter",
+     "challenges": 19,
+     "overturns": 13.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 191,
+     "overturns": 109
+    },
+    "hitter": {
+     "challenges": 101,
+     "overturns": 65
+    },
+    "pitcher": {
+     "challenges": 3,
+     "overturns": 0
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 93
+    },
+    {
+     "count": "0-1",
+     "n": 45
+    },
+    {
+     "count": "1-1",
+     "n": 32
+    }
+   ]
+  },
+  {
+   "team_id": 147,
+   "abbr": "NYY",
+   "name": "New York Yankees",
+   "division": "American League East",
+   "games": 161,
+   "offense": {
+    "challenges": 142,
+    "per_game": 0.8819875776397516,
+    "overturn_rate": 0.6056338028169014,
+    "missed": 399,
+    "share_missed_fixed": 0.21553884711779447,
+    "wp_fixed": 1.0485315869118543,
+    "wp_missed": 4.413642847501326
+   },
+   "defense": {
+    "challenges": 157,
+    "per_game": 0.9751552795031055,
+    "overturn_rate": 0.5477707006369427,
+    "missed": 308,
+    "share_missed_fixed": 0.2792207792207792,
+    "wp_fixed": 0.8427435181418175,
+    "wp_missed": 3.576983950561666
+   },
+   "tapped_out_7th_on": 0.08839499936860715,
+   "top_challengers": [
+    {
+     "name": "Austin Wells",
+     "role": "catcher",
+     "challenges": 94,
+     "overturns": 58.0
+    },
+    {
+     "name": "Ali S\u00e1nchez",
+     "role": "catcher",
+     "challenges": 36,
+     "overturns": 14.0
+    },
+    {
+     "name": "Jos\u00e9 Caballero",
+     "role": "hitter",
+     "challenges": 24,
+     "overturns": 15.0
+    },
+    {
+     "name": "Ben Rice",
+     "role": "hitter",
+     "challenges": 21,
+     "overturns": 10.0
+    },
+    {
+     "name": "J.C. Escarra",
+     "role": "catcher",
+     "challenges": 20,
+     "overturns": 12.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 150,
+     "overturns": 84
+    },
+    "hitter": {
+     "challenges": 142,
+     "overturns": 86
+    },
+    "pitcher": {
+     "challenges": 7,
+     "overturns": 2
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 110
+    },
+    {
+     "count": "0-1",
+     "n": 38
+    },
+    {
+     "count": "1-1",
+     "n": 33
+    }
+   ]
+  },
+  {
+   "team_id": 158,
+   "abbr": "MIL",
+   "name": "Milwaukee Brewers",
+   "division": "National League Central",
+   "games": 162,
+   "offense": {
+    "challenges": 82,
+    "per_game": 0.5061728395061729,
+    "overturn_rate": 0.5853658536585366,
+    "missed": 496,
+    "share_missed_fixed": 0.0967741935483871,
+    "wp_fixed": 0.7008903779069359,
+    "wp_missed": 5.993530317158726
+   },
+   "defense": {
+    "challenges": 207,
+    "per_game": 1.2777777777777777,
+    "overturn_rate": 0.5169082125603864,
+    "missed": 396,
+    "share_missed_fixed": 0.2702020202020202,
+    "wp_fixed": 1.6848716299540436,
+    "wp_missed": 5.507611738619404
+   },
+   "tapped_out_7th_on": 0.11866088034717917,
+   "top_challengers": [
+    {
+     "name": "William Contreras",
+     "role": "catcher",
+     "challenges": 148,
+     "overturns": 80.0
+    },
+    {
+     "name": "Gary S\u00e1nchez",
+     "role": "catcher",
+     "challenges": 55,
+     "overturns": 25.0
+    },
+    {
+     "name": "Gary S\u00e1nchez",
+     "role": "hitter",
+     "challenges": 32,
+     "overturns": 13.0
+    },
+    {
+     "name": "Jake Bauers",
+     "role": "hitter",
+     "challenges": 12,
+     "overturns": 9.0
+    },
+    {
+     "name": "William Contreras",
+     "role": "hitter",
+     "challenges": 7,
+     "overturns": 6.0
+    }
+   ],
+   "by_role": {
+    "catcher": {
+     "challenges": 206,
+     "overturns": 107
+    },
+    "hitter": {
+     "challenges": 82,
+     "overturns": 48
+    },
+    "pitcher": {
+     "challenges": 1,
+     "overturns": 0
+    }
+   },
+   "top_counts": [
+    {
+     "count": "0-0",
+     "n": 73
+    },
+    {
+     "count": "0-1",
+     "n": 50
+    },
+    {
+     "count": "1-1",
+     "n": 41
+    }
+   ]
+  }
+ ],
+ "notable": {
+  "biggest_overturns": [
+   {
+    "game_date": "2026-06-06",
+    "inning": 9,
+    "is_top": true,
+    "balls": 3,
+    "strikes": 1,
+    "outs": 2,
+    "base_state": 7,
+    "home_score": 6,
+    "away_score": 5,
+    "home_team": "STL",
+    "away_team": "CIN",
+    "orig_call": "B",
+    "w_in": 1.0789225084656848,
+    "v": 0.28791468887146376,
+    "challenger": "Jimmy Crooks",
+    "overturned": true,
+    "batter": "Sal Stewart",
+    "pitcher": "Riley O'Brien"
+   },
+   {
+    "game_date": "2026-09-17",
+    "inning": 10,
+    "is_top": false,
+    "balls": 1,
+    "strikes": 2,
+    "outs": 1,
+    "base_state": 5,
+    "home_score": 3,
+    "away_score": 4,
+    "home_team": "LAA",
+    "away_team": "MIN",
+    "orig_call": "S",
+    "w_in": 2.916025619638659,
+    "v": 0.173520210444934,
+    "challenger": "Mike Trout",
+    "overturned": true,
+    "batter": "Mike Trout",
+    "pitcher": "Yoendrys G\u00f3mez"
+   },
+   {
+    "game_date": "2026-06-03",
+    "inning": 9,
+    "is_top": false,
+    "balls": 1,
+    "strikes": 1,
+    "outs": 0,
+    "base_state": 4,
+    "home_score": 3,
+    "away_score": 5,
+    "home_team": "NYY",
+    "away_team": "CLE",
+    "orig_call": "B",
+    "w_in": 0.30161027523204775,
+    "v": 0.14658058345289338,
+    "challenger": "Patrick Bailey",
+    "overturned": true,
+    "batter": "Cody Bellinger",
+    "pitcher": "Cade Smith"
+   },
+   {
+    "game_date": "2026-06-01",
+    "inning": 10,
+    "is_top": true,
+    "balls": 2,
+    "strikes": 2,
+    "outs": 0,
+    "base_state": 2,
+    "home_score": 2,
+    "away_score": 2,
+    "home_team": "SEA",
+    "away_team": "NYM",
+    "orig_call": "S",
+    "w_in": 1.7281035987768936,
+    "v": 0.13241004004232237,
+    "challenger": "Juan Soto",
+    "overturned": true,
+    "batter": "Juan Soto",
+    "pitcher": "Gabe Speier"
+   },
+   {
+    "game_date": "2026-07-27",
+    "inning": 9,
+    "is_top": false,
+    "balls": 0,
+    "strikes": 2,
+    "outs": 2,
+    "base_state": 3,
+    "home_score": 2,
+    "away_score": 3,
+    "home_team": "WSH",
+    "away_team": "TOR",
+    "orig_call": "S",
+    "w_in": 3.4533865689073266,
+    "v": 0.12804586717630195,
+    "challenger": "Luis Garc\u00eda Jr.",
+    "overturned": true,
+    "batter": "Luis Garc\u00eda Jr.",
+    "pitcher": "Louis Varland"
+   },
+   {
+    "game_date": "2026-09-08",
+    "inning": 10,
+    "is_top": true,
+    "balls": 2,
+    "strikes": 2,
+    "outs": 1,
+    "base_state": 4,
+    "home_score": 2,
+    "away_score": 2,
+    "home_team": "KC",
+    "away_team": "AZ",
+    "orig_call": "S",
+    "w_in": 0.6193013151681257,
+    "v": 0.12526678843581174,
+    "challenger": "Nolan Arenado",
+    "overturned": true,
+    "batter": "Nolan Arenado",
+    "pitcher": "Steven Cruz"
+   },
+   {
+    "game_date": "2026-08-17",
+    "inning": 10,
+    "is_top": true,
+    "balls": 2,
+    "strikes": 2,
+    "outs": 2,
+    "base_state": 3,
+    "home_score": 5,
+    "away_score": 5,
+    "home_team": "CHC",
+    "away_team": "CWS",
+    "orig_call": "S",
+    "w_in": 0.5533487577283307,
+    "v": 0.12198460206588346,
+    "challenger": "Braden Montgomery",
+    "overturned": true,
+    "batter": "Braden Montgomery",
+    "pitcher": "Jacob Webb"
+   },
+   {
+    "game_date": "2026-05-19",
+    "inning": 4,
+    "is_top": true,
+    "balls": 2,
+    "strikes": 2,
+    "outs": 0,
+    "base_state": 5,
+    "home_score": 1,
+    "away_score": 0,
+    "home_team": "PHI",
+    "away_team": "CIN",
+    "orig_call": "S",
+    "w_in": 2.36684762545919,
+    "v": 0.12159477253846762,
+    "challenger": "Sal Stewart",
+    "overturned": true,
+    "batter": "Sal Stewart",
+    "pitcher": "Jes\u00fas Luzardo"
+   },
+   {
+    "game_date": "2026-09-23",
+    "inning": 4,
+    "is_top": false,
+    "balls": 3,
+    "strikes": 1,
+    "outs": 2,
+    "base_state": 7,
+    "home_score": 1,
+    "away_score": 2,
+    "home_team": "LAD",
+    "away_team": "SD",
+    "orig_call": "B",
+    "w_in": 0.28780897128867333,
+    "v": 0.12110131156301174,
+    "challenger": "Ethan Salas",
+    "overturned": true,
+    "batter": "Shohei Ohtani",
+    "pitcher": "David Morgan"
+   },
+   {
+    "game_date": "2026-05-31",
+    "inning": 10,
+    "is_top": true,
+    "balls": 1,
+    "strikes": 2,
+    "outs": 1,
+    "base_state": 5,
+    "home_score": 2,
+    "away_score": 2,
+    "home_team": "SEA",
+    "away_team": "AZ",
+    "orig_call": "S",
+    "w_in": 0.3432043919718686,
+    "v": 0.11849883395657546,
+    "challenger": "Adrian Del Castillo",
+    "overturned": true,
+    "batter": "Adrian Del Castillo",
+    "pitcher": "Luis Castillo"
+   }
+  ],
+  "biggest_untapped_misses": [
+   {
+    "game_date": "2026-05-31",
+    "inning": 7,
+    "is_top": true,
+    "balls": 3,
+    "strikes": 2,
+    "outs": 2,
+    "base_state": 7,
+    "home_score": 4,
+    "away_score": 3,
+    "home_team": "CLE",
+    "away_team": "BOS",
+    "orig_call": "B",
+    "w_in": 0.7904928911998901,
+    "v": 0.3295690519575044,
+    "wronged_ch_left": 1,
+    "batter": "Wilyer Abreu",
+    "pitcher": "Tim Herrin"
+   },
+   {
+    "game_date": "2026-09-08",
+    "inning": 9,
+    "is_top": true,
+    "balls": 3,
+    "strikes": 2,
+    "outs": 1,
+    "base_state": 3,
+    "home_score": 1,
+    "away_score": 1,
+    "home_team": "MIL",
+    "away_team": "CHC",
+    "orig_call": "B",
+    "w_in": 0.12417000532307187,
+    "v": 0.244979090192322,
+    "wronged_ch_left": 1,
+    "batter": "Michael Conforto",
+    "pitcher": "Trevor Megill"
+   },
+   {
+    "game_date": "2026-06-28",
+    "inning": 5,
+    "is_top": true,
+    "balls": 3,
+    "strikes": 2,
+    "outs": 1,
+    "base_state": 7,
+    "home_score": 1,
+    "away_score": 1,
+    "home_team": "SD",
+    "away_team": "LAD",
+    "orig_call": "B",
+    "w_in": 0.6309612120855342,
+    "v": 0.21750243113400491,
+    "wronged_ch_left": 2,
+    "batter": "Freddie Freeman",
+    "pitcher": "Michael King"
+   },
+   {
+    "game_date": "2026-06-12",
+    "inning": 9,
+    "is_top": true,
+    "balls": 1,
+    "strikes": 2,
+    "outs": 2,
+    "base_state": 7,
+    "home_score": 4,
+    "away_score": 3,
+    "home_team": "LAA",
+    "away_team": "TB",
+    "orig_call": "B",
+    "w_in": 1.45,
+    "v": 0.2048955444498386,
+    "wronged_ch_left": 2,
+    "batter": "Cedric Mullins",
+    "pitcher": "Ryan Zeferjahn"
+   },
+   {
+    "game_date": "2026-08-05",
+    "inning": 5,
+    "is_top": false,
+    "balls": 3,
+    "strikes": 2,
+    "outs": 0,
+    "base_state": 3,
+    "home_score": 1,
+    "away_score": 3,
+    "home_team": "CLE",
+    "away_team": "NYM",
+    "orig_call": "B",
+    "w_in": 0.1283943228052482,
+    "v": 0.1995957125664788,
+    "wronged_ch_left": 2,
+    "batter": "Chase DeLauter",
+    "pitcher": "Christian Scott"
+   },
+   {
+    "game_date": "2026-06-12",
+    "inning": 9,
+    "is_top": true,
+    "balls": 0,
+    "strikes": 2,
+    "outs": 2,
+    "base_state": 7,
+    "home_score": 4,
+    "away_score": 3,
+    "home_team": "LAA",
+    "away_team": "TB",
+    "orig_call": "B",
+    "w_in": 1.45,
+    "v": 0.17560091364505503,
+    "wronged_ch_left": 2,
+    "batter": "Cedric Mullins",
+    "pitcher": "Ryan Zeferjahn"
+   },
+   {
+    "game_date": "2026-06-12",
+    "inning": 7,
+    "is_top": true,
+    "balls": 3,
+    "strikes": 2,
+    "outs": 0,
+    "base_state": 1,
+    "home_score": 4,
+    "away_score": 3,
+    "home_team": "MIN",
+    "away_team": "STL",
+    "orig_call": "S",
+    "w_in": 0.6620007341890195,
+    "v": 0.17295715899036834,
+    "wronged_ch_left": 2,
+    "batter": "Blaze Jordan",
+    "pitcher": "Taylor Rogers"
+   },
+   {
+    "game_date": "2026-05-30",
+    "inning": 1,
+    "is_top": false,
+    "balls": 3,
+    "strikes": 2,
+    "outs": 1,
+    "base_state": 7,
+    "home_score": 1,
+    "away_score": 4,
+    "home_team": "TB",
+    "away_team": "LAA",
+    "orig_call": "S",
+    "w_in": 0.6220205736049087,
+    "v": 0.17263749032487052,
+    "wronged_ch_left": 2,
+    "batter": "Ben Williamson",
+    "pitcher": "Reid Detmers"
+   },
+   {
+    "game_date": "2026-04-22",
+    "inning": 7,
+    "is_top": false,
+    "balls": 3,
+    "strikes": 2,
+    "outs": 0,
+    "base_state": 1,
+    "home_score": 2,
+    "away_score": 4,
+    "home_team": "TEX",
+    "away_team": "PIT",
+    "orig_call": "S",
+    "w_in": 2.2241091122015595,
+    "v": 0.16994902996613895,
+    "wronged_ch_left": 2,
+    "batter": "Evan Carter",
+    "pitcher": "Braxton Ashcraft"
+   },
+   {
+    "game_date": "2026-09-01",
+    "inning": 3,
+    "is_top": false,
+    "balls": 3,
+    "strikes": 2,
+    "outs": 0,
+    "base_state": 3,
+    "home_score": 0,
+    "away_score": 2,
+    "home_team": "AZ",
+    "away_team": "PHI",
+    "orig_call": "S",
+    "w_in": 0.4914307210704363,
+    "v": 0.16747883425261845,
+    "wronged_ch_left": 1,
+    "batter": "Ryan Waldschmidt",
+    "pitcher": "Jes\u00fas Luzardo"
+   }
+  ]
+ }
+}
