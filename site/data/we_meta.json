@@ -1,0 +1,1 @@
+{"shape":[2,10,2,8,3,4,3,31],"order":["env(league,coors)","inning-1 (1..10, 10 = extras)","half(top,bottom)","bases(bitmask 1B=1,2B=2,3B=4)","outs","balls","strikes","home margin + 15"],"margin_lo":-15,"scale":65535}
